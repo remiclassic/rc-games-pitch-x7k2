@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="referrer" content="no-referrer">
+<title>Eight training games for Project Ares — Rémi Couture</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+@page{size:13.333in 7.5in;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#0a0e1b;--panel:#131a30;--line:#ffffff24;--ink:#f3f5fa;--muted:#aab3c7;--lime:#d6eab8;--amber:#f3b58b;--cyan:#8fd3ea}
+html,body{background:#05070f}
+body{font-family:'DM Sans',Arial,sans-serif;color:var(--ink);font-size:12.5pt;line-height:1.45;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.s{width:13.333in;height:7.5in;padding:.5in .6in .42in;background:radial-gradient(ellipse 70% 340px at 78% 0,#2a2f6b55,transparent 70%),var(--bg);position:relative;overflow:hidden;display:flex;flex-direction:column;page-break-after:always;break-after:page}
+.s:last-child{page-break-after:auto}
+h1,h2,h3{font-family:Manrope,sans-serif;letter-spacing:-.035em;line-height:1.06}
+h1{font-size:46pt;font-weight:800}
+h2{font-size:27pt;font-weight:800;max-width:11in}
+h3{font-size:13.5pt;font-weight:700;letter-spacing:-.02em;line-height:1.2}
+.eb{font-size:8.5pt;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--lime);margin-bottom:10px}
+.sub{font-size:13pt;color:var(--muted);margin-top:10px;max-width:9.6in}
+p{color:var(--muted)}
+b,strong{color:var(--ink);font-weight:600}
+.lime{color:var(--lime)}
+.foot{position:absolute;left:.6in;right:.6in;bottom:.2in;display:flex;justify-content:space-between;font-size:7.5pt;letter-spacing:.08em;color:#6f7a92;text-transform:uppercase}
+.body{flex:1;min-height:0;margin-top:20px}
+.grid{display:grid;gap:14px}
+.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.card p,.card li{font-size:10.5pt;line-height:1.45}
+.card h3{margin-bottom:6px}
+ul{list-style:none}
+li{position:relative;padding-left:15px;color:var(--muted);margin-top:6px}
+li:before{content:'';position:absolute;left:0;top:.62em;width:6px;height:6px;border-radius:50%;background:var(--lime)}
+.q{font-family:'DM Sans',sans-serif;background:#0a1020;border-left:3px solid var(--cyan);border-radius:0 6px 6px 0;padding:8px 11px;font-size:9.6pt;line-height:1.42;color:#d9e2f1;margin-top:7px}
+.q.bad{border-left-color:var(--amber)}
+.q small{display:block;font-size:7.6pt;letter-spacing:.1em;text-transform:uppercase;color:#8a96ad;margin-bottom:3px;font-weight:700}
+code{font-family:Consolas,monospace;font-size:8.8pt;color:#cfe7f5}
+.shot{border-radius:8px;border:1px solid var(--line);overflow:hidden;background:#05080f}
+.shot img{display:block;width:100%;height:100%;object-fit:cover;object-position:top left}
+.stat b{display:block;font-family:Manrope,sans-serif;font-weight:800;font-size:30pt;letter-spacing:-.04em;line-height:1;color:var(--lime)}
+.stat span{display:block;font-size:10pt;color:var(--muted);margin-top:6px;line-height:1.35}
+.tag{display:inline-block;font-size:7.4pt;font-weight:700;letter-spacing:.1em;text-transform:uppercase;border:1px solid #ffffff33;border-radius:4px;padding:3px 7px;color:#dfe6f3;margin-bottom:8px}
+table{width:100%;border-collapse:collapse;font-size:10.3pt}
+th{font-size:7.8pt;letter-spacing:.11em;text-transform:uppercase;text-align:left;color:var(--lime);padding:0 10px 8px 0;font-weight:700}
+td{padding:8px 10px 8px 0;border-top:1px solid var(--line);color:var(--muted);vertical-align:top;line-height:1.4}
+td b{color:var(--ink)}
+.two{display:grid;grid-template-columns:1.02fr 1fr;gap:18px;height:100%}
+.game{display:grid;grid-template-rows:auto 1fr;gap:10px;min-height:0}
+.game .shot{height:1.95in}
+.game h3{font-size:15pt}
+.game .meta{font-size:9.4pt;color:var(--muted);margin-top:3px}
+.cover{justify-content:flex-end;padding-bottom:.7in}
+.mosaic{position:absolute;inset:0;display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:1fr 1fr;opacity:.5}
+.mosaic img{width:100%;height:100%;object-fit:cover}
+.cover:after{content:'';position:absolute;inset:0;background:linear-gradient(#0a0e1b66 0%,#0a0e1bf2 62%)}
+.cover>*:not(.mosaic){position:relative;z-index:1}
+.opt{display:flex;flex-direction:column}
+.opt .big{font-family:Manrope,sans-serif;font-weight:800;font-size:19pt;letter-spacing:-.03em;margin-bottom:2px}
+.opt .when{font-size:9.6pt;color:var(--lime);font-weight:600;margin-bottom:8px}
+.pill{display:inline-block;align-self:flex-start;background:var(--lime);color:#16210c;font-weight:700;font-size:8pt;letter-spacing:.08em;text-transform:uppercase;border-radius:20px;padding:4px 10px;margin-bottom:10px}
+
+.gs{padding:.42in .5in .4in}
+.gs-grid{display:grid;grid-template-columns:1.46fr 1fr;gap:26px;height:100%;min-height:0}
+.gs-left{display:flex;flex-direction:column;gap:12px;min-height:0}
+.gs-video{aspect-ratio:16/9;flex:none}
+.gs-video video{display:block;width:100%;height:100%;object-fit:cover}
+.gs-under{display:grid;grid-template-columns:2.5in 1fr;gap:14px;flex:1;min-height:0}
+.gs-debrief{height:100%;max-height:1.42in}
+.gs-facts p{font-size:10pt;line-height:1.4;margin-bottom:6px}
+.gs-why{margin-top:12px;padding-top:10px;border-top:1px solid var(--line)}
+.gs-why p{font-size:10pt;line-height:1.42;margin-bottom:5px}
+.gs-right h2{font-size:23pt}
+.gs-teaches{font-size:11.2pt;line-height:1.45;margin:10px 0 6px;color:#dfe6f3}
+.gs-right .q{font-size:9.7pt;margin-top:9px}
+.playhint{position:fixed;right:16px;bottom:12px;font:600 11px 'DM Sans',sans-serif;color:#aab3c7;background:#0a0e1bcc;border:1px solid #ffffff24;border-radius:20px;padding:6px 12px;z-index:9}
+@media print{.playhint{display:none}}
+@media screen{html{scroll-snap-type:y proximity}body{display:flex;flex-direction:column;align-items:center;gap:18px;padding:18px 0}.s{scroll-snap-align:start;box-shadow:0 20px 60px #000a;border-radius:6px;zoom:var(--z,1)}}
+.wall{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;align-content:start}
+.wall-t{margin:0;position:relative;border-radius:8px;overflow:hidden;border:1px solid var(--line);background:#05080f;aspect-ratio:16/9}
+.wall-t video{display:block;width:100%;height:100%;object-fit:cover}
+.wall-t figcaption{position:absolute;left:0;right:0;bottom:0;padding:18px 10px 7px;font:700 9.5pt Manrope,sans-serif;letter-spacing:-.01em;background:linear-gradient(transparent,#05080fe6)}
+.cat{display:grid;gap:10px}.cat8{grid-template-columns:repeat(8,1fr)}.cat6{grid-template-columns:repeat(6,1fr)}.cat8 .cat-t img{aspect-ratio:4/3}.cat6 .cat-t img{aspect-ratio:16/7}
+.cat-t{margin:0;border-radius:7px;overflow:hidden;border:1px solid var(--line);background:var(--panel)}
+.cat-t img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top left}
+.cat6 .cat-t img{object-position:center}
+.cat8 .cat-t{border-color:#d6eab880}
+.cat-t figcaption{padding:7px 8px 8px}
+.cat-t b{display:block;font:700 9.2pt Manrope,sans-serif;letter-spacing:-.01em;line-height:1.2}
+.cat-t span{display:block;font-size:7.6pt;line-height:1.3;color:var(--muted);margin-top:3px}
+.cat-label{font-size:10.5pt;margin-bottom:8px}
+
+.cover-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55;z-index:0}
+.cover .cover-video{position:absolute!important;z-index:0!important}
+.play-btn{position:absolute;z-index:2;right:12px;top:12px;font:700 10pt 'DM Sans',sans-serif;background:var(--lime);color:#16210c;border:0;border-radius:6px;padding:8px 13px;cursor:pointer;box-shadow:0 8px 24px #000a;display:none}
+.can-play .play-btn{display:block}
+.gs-video{position:relative}
+.reel-grid{display:grid;grid-template-columns:1.9fr 1fr;gap:18px;align-items:start}
+.reel-video{aspect-ratio:16/9}.reel-video video{display:block;width:100%;height:100%;background:#000}
+.gfx{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;align-content:start}
+.gfx figure{margin:0}.gfx img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top left;border-radius:7px;border:1px solid var(--line)}
+.gfx figcaption{font-size:9pt;line-height:1.35;color:var(--muted);margin-top:6px}
+#player{position:fixed;inset:0;z-index:50;background:#05070f;display:none;flex-direction:column}
+#player.on{display:flex}
+#player iframe{flex:1;border:0;width:100%;background:#0a0e1b}
+#player .bar{display:flex;justify-content:space-between;align-items:center;padding:8px 14px;font:600 12px 'DM Sans',sans-serif;color:#dfe6f3}
+#player button{font:700 12px 'DM Sans',sans-serif;background:var(--lime);color:#16210c;border:0;border-radius:6px;padding:7px 14px;cursor:pointer}
+@media print{.cover-video,.play-btn,#player{display:none!important}}
+.strip{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:16px;flex:1;align-content:center}.strip .wall-t{aspect-ratio:16/6.2}
+.strip .wall-t figcaption{font-size:9.5pt}
+</style>
+</head>
+<body>
+
+<!-- 1 -->
+<section class="s cover">
+  <div class="mosaic"><img src="assets/network-defense-play.jpg"><img src="assets/phishing-play.jpg"><img src="assets/triage-play.jpg"><img src="assets/soc-play.jpg"><img src="assets/dispatch-play.jpg"><img src="assets/queryhunt-play.jpg"><img src="assets/cloud-play.jpg"><img src="assets/privilege-play.jpg"></div>
+  <video class="cover-video" src="assets/video/timelapse.mp4" muted loop playsinline preload="metadata"></video>
+  <p class="eb">A proposal for Project Ares · Rémi Couture</p>
+  <h1>Eight training games,<br>already playable.</h1>
+  <p class="sub" style="font-size:16pt;color:#dfe6f3;max-width:9in">What I have built for Ares on my own initiative, why it teaches, how it fits the platform, and a plan to keep building games for Circadence and its clients.</p>
+</section>
+
+<!-- 2 -->
+<section class="s">
+  <p class="eb">The short version</p>
+  <h2>I have eight working educational games for Ares. I would like to keep making them.</h2>
+  <div class="grid g4" style="align-content:start;margin-top:22px">
+    <div class="stat"><b>8</b><span>games, each playable from briefing to debrief in a browser</span></div>
+    <div class="stat"><b>209</b><span>automated tests, all passing, covering the learning rules of every game</span></div>
+    <div class="stat"><b>8</b><span>different genres: strategy, inbox drill, triage board, graph puzzle, SOC case, dispatch desk, SQL hunt, arcade flight</span></div>
+    <div class="stat"><b>0</b><span>ranges to spin up. Each game is a static bundle that embeds in a course page</span></div>
+  </div>
+  <div class="strip"><figure class="wall-t"><video src="assets/video/network-defense.mp4" poster="assets/video/network-defense.jpg" muted loop playsinline preload="metadata"></video><figcaption>Network Defense</figcaption></figure><figure class="wall-t"><video src="assets/video/phishing.mp4" poster="assets/video/phishing.jpg" muted loop playsinline preload="metadata"></video><figcaption>Phishing Speed Drill</figcaption></figure><figure class="wall-t"><video src="assets/video/triage.mp4" poster="assets/video/triage.jpg" muted loop playsinline preload="metadata"></video><figcaption>Incident Triage Race</figcaption></figure><figure class="wall-t"><video src="assets/video/soc.mp4" poster="assets/video/soc.jpg" muted loop playsinline preload="metadata"></video><figcaption>SOC Dashboard</figcaption></figure><figure class="wall-t"><video src="assets/video/dispatch.mp4" poster="assets/video/dispatch.jpg" muted loop playsinline preload="metadata"></video><figcaption>Cyber Dispatch</figcaption></figure><figure class="wall-t"><video src="assets/video/queryhunt.mp4" poster="assets/video/queryhunt.jpg" muted loop playsinline preload="metadata"></video><figcaption>Query Hunt</figcaption></figure><figure class="wall-t"><video src="assets/video/cloud.mp4" poster="assets/video/cloud.jpg" muted loop playsinline preload="metadata"></video><figcaption>Cloud Command</figcaption></figure><figure class="wall-t"><video src="assets/video/privilege.mp4" poster="assets/video/privilege.jpg" muted loop playsinline preload="metadata"></video><figcaption>Privilege Path</figcaption></figure></div>
+  <div class="grid g3" style="margin-top:16px">
+    <div class="card"><h3>What this is</h3><p>Real training content, not mock-ups: authored scenarios, evidence, policies, queries, and a written explanation for every important mistake. The next pages quote it.</p></div>
+    <div class="card"><h3>Why it matters to Ares</h3><p>Missions need a live range. These need nothing. They give learners practice between missions, give sales a demo that runs anywhere, and fill slots the platform has already reserved for games.</p></div>
+    <div class="card"><h3>What I am asking</h3><p>Keep me on to take these from prototype to production with the games and content teams, and to keep building new ones. I have set out three ways to do that, including a half-time option.</p></div>
+  </div>
+  <div class="foot"><span>Rémi Couture · Games for Project Ares</span><span>02</span></div>
+</section>
+
+<!-- 3 -->
+<section class="s">
+  <p class="eb">The eight games</p>
+  <h2>One skill each. Three to five minutes. A debrief that explains the result.</h2>
+  <div class="body">
+  <table>
+    <tr><th style="width:21%">Game</th><th style="width:15%">Plays like</th><th style="width:34%">What the learner practises</th><th>Authored content</th></tr>
+    <tr><td><b>Network Defense</b><br>Keep Finance Online</td><td>Isometric strategy</td><td>Routes and dependencies, reading evidence, writing a scoped access rule, backup routes that keep policy</td><td>3 rounds, 3 traffic flows, 10 evidence lines, 4 policy lines, 2 reasoning checkpoints, a final no-hint challenge</td></tr>
+    <tr><td><b>Phishing Speed Drill</b><br>The Payroll Request</td><td>Timed inbox</td><td>Sender, reply-to and real link destination; when to report, mark safe, or verify by phone</td><td>8 messages (3 phishing, 3 legitimate, 2 need verification), 32 cues, each with a reason</td></tr>
+    <tr><td><b>Incident Triage Race</b><br>The Busy Morning</td><td>Alert board</td><td>Prioritising by evidence and business impact, not the severity tag; revising when facts change</td><td>6 alerts, 29 timeline evidence items, 18 authored assessments, 2 mid-shift updates</td></tr>
+    <tr><td><b>SOC Dashboard Challenge</b><br>A Strange Login</td><td>Investigation case</td><td>Telling discriminating evidence from evidence that fits both stories; proportionate response under time</td><td>2 hidden truths with identical openings, 9 evidence items in 2 variants, 11 timed events</td></tr>
+    <tr><td><b>Cyber Dispatch</b><br>First Shift</td><td>Dispatcher desk</td><td>Asking the right questions, giving the safe next step in time, handing off only what is confirmed</td><td>6 reports across 2 shifts, 38 questions, 26 facts, 24 guidance options</td></tr>
+    <tr><td><b>Query Hunt</b><br>Unusual Access</td><td>SQL investigation</td><td>WHERE, GROUP BY, ORDER BY, JOIN on real tables, and not over-claiming from the results</td><td>5 challenges, 4 tables, 2 datasets, real SQLite running in the browser</td></tr>
+    <tr><td><b>Cloud Command</b><br>First Orbit</td><td>Arcade flight</td><td>Capacity through a dependency, cost against availability, least privilege, the IaaS responsibility split</td><td>3 checkpoints, 11 evidence items, 12 justifications with feedback, 7 permissions</td></tr>
+    <tr><td><b>Privilege Path Puzzle</b><br>Who Can Read Payroll</td><td>Graph puzzle</td><td>Tracing nested groups and inherited grants, and making the smallest fix that keeps business access</td><td>3 puzzles, 22 nodes, 13 access checks each with a business reason</td></tr>
+  </table>
+  </div>
+  <div class="foot"><span>Rémi Couture · Games for Project Ares</span><span>03</span></div>
+</section>
+
+
+<!-- wall -->
+<section class="s">
+  <p class="eb">All eight, in motion</p>
+  <h2>Every clip is real play: a decision, a mistake, the explanation, the fix.</h2>
+  <div class="body wall"><figure class="wall-t"><video src="assets/video/network-defense.mp4" poster="assets/video/network-defense.jpg" muted loop playsinline preload="metadata"></video><figcaption>Network Defense</figcaption></figure><figure class="wall-t"><video src="assets/video/phishing.mp4" poster="assets/video/phishing.jpg" muted loop playsinline preload="metadata"></video><figcaption>Phishing Speed Drill</figcaption></figure><figure class="wall-t"><video src="assets/video/triage.mp4" poster="assets/video/triage.jpg" muted loop playsinline preload="metadata"></video><figcaption>Incident Triage Race</figcaption></figure><figure class="wall-t"><video src="assets/video/soc.mp4" poster="assets/video/soc.jpg" muted loop playsinline preload="metadata"></video><figcaption>SOC Dashboard Challenge</figcaption></figure><figure class="wall-t"><video src="assets/video/dispatch.mp4" poster="assets/video/dispatch.jpg" muted loop playsinline preload="metadata"></video><figcaption>Cyber Dispatch</figcaption></figure><figure class="wall-t"><video src="assets/video/queryhunt.mp4" poster="assets/video/queryhunt.jpg" muted loop playsinline preload="metadata"></video><figcaption>Query Hunt</figcaption></figure><figure class="wall-t"><video src="assets/video/cloud.mp4" poster="assets/video/cloud.jpg" muted loop playsinline preload="metadata"></video><figcaption>Cloud Command</figcaption></figure><figure class="wall-t"><video src="assets/video/privilege.mp4" poster="assets/video/privilege.jpg" muted loop playsinline preload="metadata"></video><figcaption>Privilege Path Puzzle</figcaption></figure></div>
+  <div class="foot"><span>Recorded from the working builds</span><span>04</span></div>
+</section>
+
+<!-- reel -->
+<section class="s">
+  <p class="eb">Watch all eight in three minutes</p>
+  <h2>The gameplay reel: every game, one mistake, one explanation, one fix.</h2>
+  <div class="body reel-grid">
+    <div class="shot reel-video"><video src="gameplay-reel.mp4" poster="assets/video/network-defense.jpg" controls playsinline preload="metadata" data-manual></video></div>
+    <div class="grid" style="align-content:start;gap:10px">
+      <div class="card"><h3>What to look for</h3><ul><li>The learner makes a real decision with real content.</li><li>The game explains a mistake in one or two specific sentences.</li><li>The learner fixes it and sees the result change.</li></ul></div>
+      <div class="card"><h3>Also in this folder</h3><p><a href="gameplay-reel.mp4" style="color:#d6eab8">Download the reel</a> or <a href="pitch.pdf" style="color:#d6eab8">the slides as a PDF</a>. Every game slide has a Play button.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>Recorded from the working builds</span><span>05</span></div>
+</section>
+
+<!-- graphics -->
+<section class="s">
+  <p class="eb">The look</p>
+  <h2>Eight interfaces, one visual language. Dense when it needs to be, never confusing.</h2>
+  <div class="body gfx">
+    <figure><img src="assets/network-defense-rule.jpg" alt=""><figcaption><b>Rule editor</b> with a live preview of who the rule allows and denies</figcaption></figure>
+    <figure><img src="assets/privilege-verify.jpg" alt=""><figcaption><b>Before and after table</b> that proves a fix kept business access</figcaption></figure>
+    <figure><img src="assets/cloud-flight.jpg" alt=""><figcaption><b>Flight between stations</b>, collecting evidence on the way</figcaption></figure>
+    <figure><img src="assets/soc-feedback.jpg" alt=""><figcaption><b>“What changed”</b> coach note, with rewind to any decision</figcaption></figure>
+    <figure><img src="assets/network-defense-debrief.jpg" alt=""><figcaption><b>Decision replay</b> rebuilt from the learner’s own moves</figcaption></figure>
+    <figure><img src="assets/phishing-debrief.jpg" alt=""><figcaption><b>Habits, not just a score:</b> false alarms, misses, skipped checks</figcaption></figure>
+    <figure><img src="assets/dispatch-debrief.jpg" alt=""><figcaption><b>Four-part score</b> with response time kept separate</figcaption></figure>
+    <figure><img src="assets/cloud-outcome.jpg" alt=""><figcaption><b>Feedback built from the simulation’s own numbers</b></figcaption></figure>
+  </div>
+  <div class="foot"><span>Status is always shown with shape and icon as well as colour</span><span>06</span></div>
+</section>
+
+<!-- game 1 -->
+<section class="s gs">
+  <div class="gs-grid">
+    <div class="gs-left">
+      <div class="shot gs-video"><button class="play-btn" type="button" data-play="play/index.html">▶ Play this game</button><video src="assets/video/network-defense.mp4" poster="assets/video/network-defense.jpg" muted loop playsinline preload="metadata"></video></div>
+      <div class="gs-under">
+        <div class="shot gs-debrief"><img src="assets/network-defense-debrief.jpg" alt=""></div>
+        <div class="gs-facts">
+          <p><b>How it is scored.</b> 40% service delivered, 40% prohibited activity denied, 20% efficiency. Two reasoning checkpoints and the final challenge are recorded separately as learning evidence.</p>
+          <p><b>Proved by tests.</b> “Blanket blocking cannot earn the best result” and “backup routes preserve the access policy”, each checked on 8 seeds. 32 tests.</p>
+          <p><b>Depth and replay.</b> A new seed changes the traffic order, the attacker’s address and service, and which link fails.</p>
+        </div>
+      </div>
+    </div>
+    <div class="gs-right">
+      <p class="eb">Game 1 of 8 · Isometric strategy</p>
+      <h2>Network Defense: Keep Finance Online</h2>
+      <p class="gs-teaches"><b class="lime">Teaches:</b> How routes and dependencies keep a service up, how to read evidence, and how to write an access rule that stops the attacker without stopping the business.</p>
+      <div class="q "><small>Evidence on screen</small>“Source 198.51.100.23 is not on any approved list and is outside the company network.” “Destination: Finance — Remote desktop admin (RDP 3389).” “Pattern: repeated sign-in attempts, each with a different username.”</div><div class="q bad"><small>After a common mistake</small>“You connected Finance straight to the Gateway. Invoices reached Finance, but Finance couldn’t reach its database on the Core server, so each one failed. Services depend on other services — a path from the internet isn’t enough.”</div><div class="q "><small>Final challenge, no hints</small>“Which single rule best fits the policy?” Answer: <code>DENY 203.0.113.200 → HR : Admin console</code></div>
+      <div class="gs-why"><p><b>Why it sticks.</b> The learner watches a rule succeed or fail on live traffic, so cause and effect are remembered together.</p><p><b>Where it fits Ares.</b> Fits the reserved packet-gate and network-segmentation slots. Firewall and ACL rules are listed as untapped.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>Gameplay recorded from the working build · Quotes from the game’s data file</span><span>07</span></div>
+</section>
+
+<!-- game 2 -->
+<section class="s gs">
+  <div class="gs-grid">
+    <div class="gs-left">
+      <div class="shot gs-video"><button class="play-btn" type="button" data-play="play/phishing.html">▶ Play this game</button><video src="assets/video/phishing.mp4" poster="assets/video/phishing.jpg" muted loop playsinline preload="metadata"></video></div>
+      <div class="gs-under">
+        <div class="shot gs-debrief"><img src="assets/phishing-debrief.jpg" alt=""></div>
+        <div class="gs-facts">
+          <p><b>How it is scored.</b> 100 for the best response, +20 per strong cue cited, a streak bonus, and a speed bonus that only counts after a correct decision. A false alarm scores zero.</p>
+          <p><b>Proved by tests.</b> Always-report, always-safe and always-verify each “stay out of the top two ratings”. “Slow but correct play still earns the top rating.” 53 tests.</p>
+          <p><b>Depth and replay.</b> 8 messages, 32 cues. The first message is guided and untimed; later batches are shuffled per seed.</p>
+        </div>
+      </div>
+    </div>
+    <div class="gs-right">
+      <p class="eb">Game 2 of 8 · Timed inbox drill</p>
+      <h2>Phishing Speed Drill: The Payroll Request</h2>
+      <p class="gs-teaches"><b class="lime">Teaches:</b> Reading the sender, the reply-to and the real link destination, backing a call with evidence, and knowing when only a phone check can settle it.</p>
+      <div class="q "><small>A look-alike domain</small><code>helpdesk@acme.example.it-notices.example</code> “A domain is read from the right. This address belongs to it-notices.example; ‘acme.example’ is only a label in front of it.”</div><div class="q "><small>A genuine address, still not safe</small>A bank-change request from a real colleague’s address: “The address is genuine, but a matching address doesn’t prove who is typing. Mailboxes get compromised.”</div><div class="q bad"><small>After a false alarm</small>“This was a real payslip notice. External mail and a generic greeting are not evidence by themselves; the domain, link, and timing all matched. False alarms slow down real work.”</div>
+      <div class="gs-why"><p><b>Why it sticks.</b> Citing the evidence before deciding builds the habit of looking, not guessing.</p><p><b>Where it fits Ares.</b> Fits the reserved phish-sprint slot. Suits awareness training for every employee, not only analysts.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>Gameplay recorded from the working build · Quotes from the game’s data file</span><span>08</span></div>
+</section>
+
+<!-- game 3 -->
+<section class="s gs">
+  <div class="gs-grid">
+    <div class="gs-left">
+      <div class="shot gs-video"><button class="play-btn" type="button" data-play="play/triage.html">▶ Play this game</button><video src="assets/video/triage.mp4" poster="assets/video/triage.jpg" muted loop playsinline preload="metadata"></video></div>
+      <div class="gs-under">
+        <div class="shot gs-debrief"><img src="assets/triage-debrief.jpg" alt=""></div>
+        <div class="gs-facts">
+          <p><b>How it is scored.</b> Points for the best or a defensible lane, a matching reason, revising on new evidence and correct links. Missed criticals and needless escalations cost points. Time is reported separately.</p>
+          <p><b>Proved by tests.</b> “Never treats the severity tag as a valid justification.” “Rewards revising when evidence changes, not standing still.” 13 tests.</p>
+          <p><b>Depth and replay.</b> 6 alerts, 29 evidence items, 2 updates over 3 rounds, with a 7-moment replay in the debrief.</p>
+        </div>
+      </div>
+    </div>
+    <div class="gs-right">
+      <p class="eb">Game 3 of 8 · Alert triage board</p>
+      <h2>Incident Triage Race: The Busy Morning</h2>
+      <p class="gs-teaches"><b class="lime">Teaches:</b> Setting priority from evidence and business impact, linking alerts that are one incident, and revising when new facts arrive.</p>
+      <div class="q "><small>Tagged “Low” in the queue</small>A new device on an account that “approves outgoing payments”. “The quietest alert in the queue turns out to be an attacker with a working sign-in on the payments portal. Business impact, not the severity tag, sets the urgency.”</div><div class="q "><small>A mid-shift update</small>“Infrastructure confirms change ticket CHG-4471: backups moved to a new offsite storage provider this morning… Nothing else in the queue is explained by it.”</div><div class="q bad"><small>A justification that always scores zero</small>“The severity tag says so.”</div>
+      <div class="gs-why"><p><b>Why it sticks.</b> Being wrong about the quiet alert, then seeing why, is the lesson people repeat to colleagues.</p><p><b>Where it fits Ares.</b> Matches the design guide’s “Alert Triage” concept. A natural team game for workshops.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>Gameplay recorded from the working build · Quotes from the game’s data file</span><span>09</span></div>
+</section>
+
+<!-- game 4 -->
+<section class="s gs">
+  <div class="gs-grid">
+    <div class="gs-left">
+      <div class="shot gs-video"><button class="play-btn" type="button" data-play="play/soc.html">▶ Play this game</button><video src="assets/video/soc.mp4" poster="assets/video/soc.jpg" muted loop playsinline preload="metadata"></video></div>
+      <div class="gs-under">
+        <div class="shot gs-debrief"><img src="assets/soc-debrief.jpg" alt=""></div>
+        <div class="gs-facts">
+          <p><b>How it is scored.</b> Outcome 40, decisions 36, reasoning 24. “Each call is judged on what you knew at the time, not on how the case turned out.”</p>
+          <p><b>Proved by tests.</b> “No single blind opening wins in both variants.” “Investigating first is not always right: delay lets the incident progress.” 13 tests.</p>
+          <p><b>Depth and replay.</b> The seed decides whether it is a compromise or approved work. Practice mode can rewind to any decision.</p>
+        </div>
+      </div>
+    </div>
+    <div class="gs-right">
+      <p class="eb">Game 4 of 8 · SOC investigation case</p>
+      <h2>SOC Dashboard Challenge: A Strange Login</h2>
+      <p class="gs-teaches"><b class="lime">Teaches:</b> Separating evidence that discriminates between explanations from evidence that fits both, and responding in proportion while data is leaving.</p>
+      <div class="q "><small>Same opening, two possible truths</small>Compromise: “OUTLOOK.EXE → WINWORD.EXE (Invoice_Q3_revised.docm) → powershell.exe -WindowStyle Hidden -EncodedCommand …” Approved work: “Task Scheduler → powershell.exe -File QuarterClose-Export.ps1”.</div><div class="q "><small>Evidence that proves nothing</small>“A passed prompt shows that someone tapped Approve. Intruders get prompts approved too, so this fits both explanations.”</div><div class="q bad"><small>After over-reacting</small>“You had strong evidence that this was approved work and contained anyway. The business paid for an interruption the evidence did not support.”</div>
+      <div class="gs-why"><p><b>Why it sticks.</b> Two truths with the same opening teach that the right call comes from evidence, not from matching a familiar story.</p><p><b>Where it fits Ares.</b> A step up from triage toward analyst missions, and a warm-up before a range investigation.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>Gameplay recorded from the working build · Quotes from the game’s data file</span><span>10</span></div>
+</section>
+
+<!-- game 5 -->
+<section class="s gs">
+  <div class="gs-grid">
+    <div class="gs-left">
+      <div class="shot gs-video"><button class="play-btn" type="button" data-play="play/dispatch.html">▶ Play this game</button><video src="assets/video/dispatch.mp4" poster="assets/video/dispatch.jpg" muted loop playsinline preload="metadata"></video></div>
+      <div class="gs-under">
+        <div class="shot gs-debrief"><img src="assets/dispatch-debrief.jpg" alt=""></div>
+        <div class="gs-facts">
+          <p><b>How it is scored.</b> Four parts of 25 per report: evidence gathered, priority, guidance and handoff. Response time is shown but kept out of the score.</p>
+          <p><b>Proved by tests.</b> “Escalating everything as high scores poorly.” “Asking every question before acting is not the best run.” 24 tests.</p>
+          <p><b>Depth and replay.</b> 6 reports over 2 shifts, 38 questions, 24 guidance options. The second shift changes which report is benign.</p>
+        </div>
+      </div>
+    </div>
+    <div class="gs-right">
+      <p class="eb">Game 5 of 8 · Dispatcher desk</p>
+      <h2>Cyber Dispatch: First Shift</h2>
+      <p class="gs-teaches"><b class="lime">Teaches:</b> Asking the questions that matter, giving the safe next step before harm lands, and handing off only what the evidence confirms.</p>
+      <div class="q "><small>A report comes in</small>“Hi! I just got an MFA prompt but I’m not signing in right now. I’m at my desk. Is this legit?” Asking reveals: “The prompt shows a Mail sign-in from Rotterdam. She is in the Lisbon office.”</div><div class="q "><small>The safe step, in time</small>“Turn off Wi-Fi and unplug the network cable now. Leave the laptop switched on.”</div><div class="q bad"><small>A harmful step and its consequence</small>“Reply to the email and ask them to confirm the new details.” → “The sender ‘confirmed’ their own request, and Elena queued the payment.”</div>
+      <div class="gs-why"><p><b>Why it sticks.</b> Recoverable harm: the learner sees the damage a bad instruction causes, then gets to put it right.</p><p><b>Where it fits Ares.</b> Covers first response and handoff, part of the incident response lifecycle listed as untapped. Good for help desks.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>Gameplay recorded from the working build · Quotes from the game’s data file</span><span>11</span></div>
+</section>
+
+<!-- game 6 -->
+<section class="s gs">
+  <div class="gs-grid">
+    <div class="gs-left">
+      <div class="shot gs-video"><button class="play-btn" type="button" data-play="play/queryhunt.html">▶ Play this game</button><video src="assets/video/queryhunt.mp4" poster="assets/video/queryhunt.jpg" muted loop playsinline preload="metadata"></video></div>
+      <div class="gs-under">
+        <div class="shot gs-debrief"><img src="assets/queryhunt-debrief.jpg" alt=""></div>
+        <div class="gs-facts">
+          <p><b>How it is scored.</b> Out of 1,000: correct results, evidence cards, interpretation and conclusion. A right conclusion without its evidence scores zero. Hints are counted, never deducted.</p>
+          <p><b>Proved by tests.</b> “Accepts equivalent queries written differently.” “Never grants evidence for running a query.” Real SQLite runs in the tests. 31 tests.</p>
+          <p><b>Depth and replay.</b> A second dataset makes the highest failure count the wrong account to follow. Guided tiles or written SQL.</p>
+        </div>
+      </div>
+    </div>
+    <div class="gs-right">
+      <p class="eb">Game 6 of 8 · SQL investigation</p>
+      <h2>Query Hunt: Unusual Access</h2>
+      <p class="gs-teaches"><b class="lime">Teaches:</b> Filtering, aggregating and joining real log tables, reading the result correctly, and telling a suspicious observation from a confirmed conclusion.</p>
+      <div class="q "><small>A query the learner produces</small><code>SELECT account_id, COUNT(*) AS attempts FROM logins WHERE result = 'failure' … GROUP BY account_id ORDER BY attempts DESC</code></div><div class="q bad"><small>When the learner jumps ahead</small>“Repeated failed logins alone do not establish compromise: they show attempts. Which evidence shows what happened after them?”</div><div class="q "><small>The debrief names the limits</small>“The records do not show who was at the keyboard, how the password was obtained, or that data left the device.”</div>
+      <div class="gs-why"><p><b>Why it sticks.</b> Writing the query is retrieval practice. Being stopped from over-claiming teaches analytic discipline.</p><p><b>Where it fits Ares.</b> Fits the reserved log-hunt slot. Log analysis is listed as untapped.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>Gameplay recorded from the working build · Quotes from the game’s data file</span><span>12</span></div>
+</section>
+
+<!-- game 7 -->
+<section class="s gs">
+  <div class="gs-grid">
+    <div class="gs-left">
+      <div class="shot gs-video"><button class="play-btn" type="button" data-play="play/cloud.html">▶ Play this game</button><video src="assets/video/cloud.mp4" poster="assets/video/cloud.jpg" muted loop playsinline preload="metadata"></video></div>
+      <div class="gs-under">
+        <div class="shot gs-debrief"><img src="assets/cloud-debrief.jpg" alt=""></div>
+        <div class="gs-facts">
+          <p><b>How it is scored.</b> Continuity 35%, policy 30%, resources 15%, justification 20%. A failed access review marks the security objective failed whatever the score.</p>
+          <p><b>Proved by tests.</b> “Adding capacity helps only where capacity is the constraint.” “Does not let a high score hide a failed security objective.” 18 tests.</p>
+          <p><b>Depth and replay.</b> 3 checkpoints, 11 evidence items. Fly manually or on autopilot; flying is reported apart from the learning score.</p>
+        </div>
+      </div>
+    </div>
+    <div class="gs-right">
+      <p class="eb">Game 7 of 8 · Arcade flight</p>
+      <h2>Cloud Command: First Orbit</h2>
+      <p class="gs-teaches"><b class="lime">Teaches:</b> Finding the real capacity constraint through a dependency, balancing availability against cost, least privilege, and who is responsible for what on IaaS.</p>
+      <div class="q "><small>Requirements</small>“Serve at least 99% of checkout requests at the peak.” “Keep 10% headroom above the expected peak on every service in the request path.” “Cost ceiling: 120 credits for the 2-hour surge window.”</div><div class="q bad"><small>After scaling the wrong service</small>Checkout “has enough capacity, but each request calls” the Payments API, “which can serve only” 1,200 rps. More checkout instances “cannot help until” it has capacity.</div><div class="q "><small>Least privilege</small>A backup account holds 7 permissions. “Reading a snapshot requires keys:use on that key. The ticket does not mention it.”</div>
+      <div class="gs-why"><p><b>Why it sticks.</b> The numbers in the feedback come from the simulation, so the explanation matches exactly what the learner did.</p><p><b>Where it fits Ares.</b> Cloud security is listed as untapped. The arcade layer shows the same content can carry a lighter style.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>Gameplay recorded from the working build · Quotes from the game’s data file</span><span>13</span></div>
+</section>
+
+<!-- game 8 -->
+<section class="s gs">
+  <div class="gs-grid">
+    <div class="gs-left">
+      <div class="shot gs-video"><button class="play-btn" type="button" data-play="play/privilege.html">▶ Play this game</button><video src="assets/video/privilege.mp4" poster="assets/video/privilege.jpg" muted loop playsinline preload="metadata"></video></div>
+      <div class="gs-under">
+        <div class="shot gs-debrief"><img src="assets/privilege-debrief.jpg" alt=""></div>
+        <div class="gs-facts">
+          <p><b>How it is scored.</b> 100 for solving, a bonus for matching the minimum number of changes, points for correct predictions, and 40 for explaining it right first time.</p>
+          <p><b>Proved by tests.</b> “Never treats connectivity as authorization.” Each puzzle “cannot be solved with fewer changes than par” and “fails when access is removed for everyone”. 25 tests.</p>
+          <p><b>Depth and replay.</b> 3 puzzles, 22 nodes, 13 access checks. Inspect, predict, test, change, verify, explain.</p>
+        </div>
+      </div>
+    </div>
+    <div class="gs-right">
+      <p class="eb">Game 8 of 8 · Access graph puzzle</p>
+      <h2>Privilege Path Puzzle: Who Can Read Payroll</h2>
+      <p class="gs-teaches"><b class="lime">Teaches:</b> Tracing nested groups and inherited grants to find every route to a file, then making the smallest change that closes it without breaking business access.</p>
+      <div class="q "><small>The brief</small>“An engineer opened a payroll file. Nobody remembers giving them access.” Hidden in the graph: “Added during a payroll deadline two years ago so Finance could get in quickly.”</div><div class="q "><small>A check the fix must still pass</small>“svc-backup · Write · Ledger — must be denied”: “A backup job copies data. It never needs to change it.”</div><div class="q bad"><small>After a wrong explanation</small>“Signing in is authentication: it proves who Alex is. What Alex may open is authorization, and that came from a grant.”</div>
+      <div class="gs-why"><p><b>Why it sticks.</b> Predict, test, then explain: the learner commits to an answer before seeing the result.</p><p><b>Where it fits Ares.</b> Matches the design guide’s “IAM Auditor” concept. Identity and access is listed as untapped.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>Gameplay recorded from the working build · Quotes from the game’s data file</span><span>14</span></div>
+</section>
+<!-- 8 -->
+<section class="s">
+  <p class="eb">Why people remember it</p>
+  <h2>Each game is built on how people learn, not on points and badges.</h2>
+  <div class="body grid g3" style="align-content:start">
+    <div class="card"><span class="tag">Retrieval practice</span><h3>The learner produces the answer</h3><p>They write the SQL, build the rule, place the alert, choose the fix. Producing an answer builds memory that reading and recognising do not.</p></div>
+    <div class="card"><span class="tag">Immediate, specific feedback</span><h3>Every mistake explains itself</h3><p>Feedback names the decision and the reason, at the moment it happens. Network Defense alone has about 19 explanation templates.</p></div>
+    <div class="card"><span class="tag">Safe failure</span><h3>Consequences without damage</h3><p>A wrong call queues a fraudulent payment or cuts off a working laptop, in fiction. The learner sees the cost, then gets to fix it.</p></div>
+    <div class="card"><span class="tag">Judgment, not recall of facts</span><h3>Evidence before conclusion</h3><p>Inspecting never classifies for you. Weak evidence never counts as proof. A correct conclusion without its evidence scores zero in Query Hunt.</p></div>
+    <div class="card"><span class="tag">Reflection</span><h3>A debrief that replays your decisions</h3><p>Choice, observed result, why, and how it connects to the mission. Network Defense rebuilds the exact moment from the command log.</p></div>
+    <div class="card"><span class="tag">Short and repeatable</span><h3>Five minutes, different next time</h3><p>Seeds and variants change traffic, attackers, the failing link, or which report is benign, so a replay is practice and not memorisation.</p></div>
+  </div>
+  <p style="font-size:10.5pt;margin-top:14px">One rule runs through all eight: <b>the game score and the learning evidence are recorded separately.</b> As one debrief puts it, “this record is evidence, not a grade.” That is what makes the result usable for reporting.</p>
+  <div class="foot"><span>Rémi Couture · Games for Project Ares</span><span>15</span></div>
+</section>
+
+<!-- 9 -->
+<section class="s">
+  <p class="eb">Twenty years of game craft, applied to training</p>
+  <h2>The hard part of a learning game is balance. I test it the way a game studio would.</h2>
+  <div class="body two" style="grid-template-columns:1fr 1.05fr">
+    <div>
+      <p style="font-size:11.5pt">If a learner can win by doing the same thing every time, the game teaches that habit. So every game has tests that prove the lazy strategy loses.</p>
+      <table style="margin-top:12px">
+        <tr><th>Lazy strategy</th><th>What the tests prove</th></tr>
+        <tr><td><b>Block everything</b></td><td>“Blanket blocking cannot earn the best result”, checked on 8 seeds</td></tr>
+        <tr><td><b>Report every email</b></td><td>Always-report, always-safe and always-verify each “stay out of the top two ratings”</td></tr>
+        <tr><td><b>Escalate everything</b></td><td>“Penalizes escalating everything alarming” and “penalizes monitoring everything”</td></tr>
+        <tr><td><b>Trust the label</b></td><td>“Never treats the severity tag as a valid justification”</td></tr>
+        <tr><td><b>Always investigate first</b></td><td>“Investigating first is not always right: delay lets the incident progress”</td></tr>
+        <tr><td><b>Go fast</b></td><td>“Slow but correct play still earns the top rating”; speed only counts after a correct decision</td></tr>
+      </table>
+    </div>
+    <div class="grid" style="align-content:start;gap:12px">
+      <div class="card"><h3>The first ten seconds</h3><p>A guided, untimed first step in each game. The learner acts before they read a manual, the way a good game tutorial works.</p></div>
+      <div class="card"><h3>An economy that forces trade-offs</h3><p>Action points, analyst slots, credits and case minutes are all limited. Limited resources are what turn knowledge into decisions.</p></div>
+      <div class="card"><h3>Feedback you can feel</h3><p>Routes light up, tokens bounce off a rule, a service goes dark. Shape and icon back up colour, so the signal never depends on colour alone.</p></div>
+      <div class="card"><h3>A reason to play again</h3><p>Ratings, a clean-run target, and a variant that changes the right answer. Query Hunt’s second dataset makes the highest count the wrong account to follow.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>Test names quoted from the project’s test suites · 209 of 209 passing</span><span>16</span></div>
+</section>
+
+<!-- 10 -->
+<section class="s">
+  <p class="eb">Built like a product, not a demo</p>
+  <h2>These are engineered to be reviewed, tested, embedded and extended.</h2>
+  <div class="body grid g3" style="align-content:start">
+    <div class="card"><h3>Content lives in one file per game</h3><p>Scenarios, evidence, policy and explanations sit in a single data file, apart from the code. A content developer or SME can review and change the teaching without touching the engine.</p></div>
+    <div class="card"><h3>The rules run without a browser</h3><p>Each game’s simulation is pure logic, separate from the screen. That is why 209 tests can check the learning rules in under two seconds.</p></div>
+    <div class="card"><h3>Deterministic and replayable</h3><p>The same seed and the same commands always give the same result. It powers the debrief replays, and it would let the platform verify a result on the server.</p></div>
+    <div class="card"><h3>A host contract already written</h3><p>Each game posts started, statement, completed and navigate messages to its host page, with an activity ID per scenario. A draft integration document describes the payloads.</p></div>
+    <div class="card"><h3>SME review packs ready to sign</h3><p>Four games come with a review sheet that lists every objective, simplification and explanation for an expert to approve, correct or reject.</p></div>
+    <div class="card"><h3>Accessible by design</h3><p>Keyboard play, focus-trapped dialogs, screen-reader announcements, and reduced-motion and larger-text settings. Layouts stack for small screens.</p></div>
+  </div>
+  <div class="grid g4" style="margin-top:16px">
+    <div class="stat"><b style="font-size:22pt">~22,000</b><span>lines of TypeScript, including tests</span></div>
+    <div class="stat"><b style="font-size:22pt">8 pages</b><span>one static page per game, one build</span></div>
+    <div class="stat"><b style="font-size:22pt">0 servers</b><span>no backend, no range, no sign-in</span></div>
+    <div class="stat"><b style="font-size:22pt">AI-assisted</b><span>I design and direct, and build with AI tooling. That is how one person ships this much.</span></div>
+  </div>
+  <div class="foot"><span>Rémi Couture · Games for Project Ares</span><span>17</span></div>
+</section>
+
+<!-- catalog -->
+<section class="s">
+  <p class="eb">The full line-up</p>
+  <h2>With these, the Games Hub goes from 6 games to 14.</h2>
+  <div class="body" style="margin-top:14px">
+    <p class="cat-label"><b class="lime">New · my eight, playable now.</b> Judgment under pressure: what to do with incomplete evidence, limited time and a business to keep running.</p>
+    <div class="cat cat8"><figure class="cat-t"><img src="assets/video/network-defense.jpg" alt=""><figcaption><b>Network Defense</b><span>Routes, evidence, scoped access rules</span></figcaption></figure><figure class="cat-t"><img src="assets/video/phishing.jpg" alt=""><figcaption><b>Phishing Speed Drill</b><span>Sender, link and reply-to evidence</span></figcaption></figure><figure class="cat-t"><img src="assets/video/triage.jpg" alt=""><figcaption><b>Incident Triage Race</b><span>Priority from evidence and impact</span></figcaption></figure><figure class="cat-t"><img src="assets/video/soc.jpg" alt=""><figcaption><b>SOC Dashboard Challenge</b><span>Discriminating evidence, proportionate response</span></figcaption></figure><figure class="cat-t"><img src="assets/video/dispatch.jpg" alt=""><figcaption><b>Cyber Dispatch</b><span>First response and clean handoff</span></figcaption></figure><figure class="cat-t"><img src="assets/video/queryhunt.jpg" alt=""><figcaption><b>Query Hunt</b><span>SQL log investigation</span></figcaption></figure><figure class="cat-t"><img src="assets/video/cloud.jpg" alt=""><figcaption><b>Cloud Command</b><span>Capacity, cost, least privilege</span></figcaption></figure><figure class="cat-t"><img src="assets/video/privilege.jpg" alt=""><figcaption><b>Privilege Path Puzzle</b><span>Groups, grants and minimal fixes</span></figcaption></figure></div>
+    <p class="cat-label" style="margin-top:14px"><b>In the hub today · built by the games team.</b> Framework fluency: tactics, the kill chain, patterns, ports and attack paths.</p>
+    <div class="cat cat6"><figure class="cat-t"><img src="assets/hub/astro-defense.jpg" alt=""><figcaption><b>Astro-Defense</b><span>ATT&amp;CK tactics and kill chain responses</span></figcaption></figure><figure class="cat-t"><img src="assets/hub/cylitaire.jpg" alt=""><figcaption><b>Cylitaire: Kill Chain</b><span>Kill chain order and tools</span></figcaption></figure><figure class="cat-t"><img src="assets/hub/trivialoot.jpg" alt=""><figcaption><b>Trivialoot</b><span>Six-category knowledge board</span></figcaption></figure><figure class="cat-t"><img src="assets/hub/regexile.jpg" alt=""><figcaption><b>RegExile</b><span>Regular expressions</span></figcaption></figure><figure class="cat-t"><img src="assets/hub/portflow.jpg" alt=""><figcaption><b>Portflow</b><span>Ports and protocols</span></figcaption></figure><figure class="cat-t"><img src="assets/hub/threat-modeler.jpg" alt=""><figcaption><b>Threat Modeler</b><span>Attack paths and detection coverage</span></figcaption></figure></div>
+  </div>
+  <div class="foot"><span>Fourteen games across fourteen skills, and two kinds of learning that complement each other</span><span>18</span></div>
+</section>
+
+<!-- 11 -->
+<section class="s">
+  <p class="eb">Where it fits Ares</p>
+  <h2>These add to the Games Hub. They cover ground the platform has already marked as open.</h2>
+  <div class="body two" style="grid-template-columns:1.25fr 1fr">
+    <div>
+      <p style="font-size:11.5pt">The six games in the hub today, built by the games team, cover ATT&amp;CK tactics, the kill chain, regex, ports, trivia and attack paths. The team’s own design guide lists what is still uncovered, and the router already holds five reserved game slots with nothing behind them.</p>
+      <table style="margin-top:12px">
+        <tr><th style="width:36%">Open in the design guide or router</th><th>What I have playable</th></tr>
+        <tr><td>Reserved slot <code>phish-sprint</code></td><td><b>Phishing Speed Drill</b></td></tr>
+        <tr><td>Reserved slot <code>log-hunt</code> · “Log Analysis / SIEM: entirely untapped”</td><td><b>Query Hunt</b></td></tr>
+        <tr><td>Reserved slots <code>packet-gate</code>, <code>network-segmentation-sim</code> · “Firewall / ACL Rules: entirely untapped”</td><td><b>Network Defense</b></td></tr>
+        <tr><td>Tier 2 concept “Alert Triage”</td><td><b>Incident Triage Race</b>, <b>SOC Dashboard Challenge</b></td></tr>
+        <tr><td>“Cloud Security (IAM, exposure): entirely untapped”</td><td><b>Cloud Command</b>, <b>Privilege Path Puzzle</b></td></tr>
+        <tr><td>“Incident Response Lifecycle: entirely untapped”</td><td><b>Cyber Dispatch</b> (first response and handoff)</td></tr>
+      </table>
+    </div>
+    <div class="grid" style="align-content:start;gap:12px">
+      <div class="card"><h3>Different from what exists</h3><p>The hub’s games drill recall of frameworks. These drill judgment: what to do with incomplete evidence, limited time and a business to keep running. The two sets complement each other.</p></div>
+      <div class="card"><h3>They line up with the team’s approval gate</h3><p>The mechanic collapses without domain knowledge. Accuracy outranks speed. Feedback happens during play. Replay is driven by content. Explicit NICE work-role and KSA mapping is the piece still to add, with the content team.</p></div>
+      <div class="card"><h3>Small integration step</h3><p>The hub uses a ready, score-update, complete message flow. My games already post the equivalent events, so each needs a thin adapter, not a rewrite.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>Gaps quoted from docs/guides/minigames (README and game design guide)</span><span>19</span></div>
+</section>
+
+<!-- 12 -->
+<section class="s">
+  <p class="eb">More games, in any style</p>
+  <h2>Eight genres so far. The method is what scales, not one look.</h2>
+  <div class="body two" style="grid-template-columns:1fr 1.15fr">
+    <div>
+      <h3 style="margin-bottom:8px">How a new game gets made</h3>
+      <ul style="font-size:11pt">
+        <li><b>Start from the skill.</b> One learning objective, one decision the learner keeps getting wrong.</li>
+        <li><b>Find the mechanic that is the skill.</b> If you can win without the knowledge, it is the wrong mechanic.</li>
+        <li><b>Write the content as data.</b> Scenario, evidence, and an explanation for each mistake, in one reviewable file.</li>
+        <li><b>Prove the balance.</b> Tests that show the lazy strategies lose and careful play wins.</li>
+        <li><b>Hand the SME a review sheet.</b> Every objective and simplification, ready to approve or correct.</li>
+      </ul>
+      <p style="font-size:10.5pt;margin-top:14px">The shared pieces already exist: the seeded random generator, the replay log, the host messages, the accessibility helpers and the build. A new game is a data file, a simulation, a screen and a test file.</p>
+    </div>
+    <div>
+      <h3 style="margin-bottom:8px">What I would build next</h3>
+      <table>
+        <tr><th style="width:34%">Concept</th><th>Why</th></tr>
+        <tr><td><b>IR Sequencer</b></td><td>Tier 1 in the design guide. Order the response steps under pressure.</td></tr>
+        <tr><td><b>CSF Incident Sorter</b></td><td>Tier 1. Route events to Identify, Protect, Detect, Respond, Recover.</td></tr>
+        <tr><td><b>ATT&amp;CK Technique Mapper</b></td><td>Tier 1. Takes the hub from tactic level to technique level.</td></tr>
+        <tr><td><b>More cases for the eight</b></td><td>New scenarios are content, not code. Query Hunt Case 02, a second phishing inbox, a harder shift.</td></tr>
+        <tr><td><b>Team modes for workshops</b></td><td>Head-to-head triage and dispatch for Security Immersion Workshop events, with a shared leaderboard.</td></tr>
+        <tr><td><b>Mission warm-ups</b></td><td>A two-minute game before a range mission that drills the one concept the mission depends on.</td></tr>
+      </table>
+    </div>
+  </div>
+  <div class="foot"><span>Rémi Couture · Games for Project Ares</span><span>20</span></div>
+</section>
+
+<!-- 13 -->
+<section class="s">
+  <p class="eb">What it does for Circadence</p>
+  <h2>Games are the cheapest way to add practice, reach and proof to the platform.</h2>
+  <div class="body grid g3" style="align-content:start">
+    <div class="card"><h3>Practice that costs nothing to run</h3><p>A mission allocates live virtual machines. A game is a static page. Learners can practise as often as they like without a range starting up.</p></div>
+    <div class="card"><h3>A demo that runs anywhere</h3><p>No sign-in and no install. A prospect can play a round in a meeting, on a booth screen, or from a link in an email, and understand what Ares teaches.</p></div>
+    <div class="card"><h3>More for every licence</h3><p>New games widen the catalog between major releases, and give customer admins something fresh to assign.</p></div>
+    <div class="card"><h3>Content for workshops and events</h3><p>Short, scored, spectator-friendly games suit Security Immersion Workshops, where dozens of people play at once from a browser.</p></div>
+    <div class="card"><h3>Evidence for reporting</h3><p>Each game records decisions and reasoning separately from the score. Once mapped to work roles, that feeds readiness reporting with more than a completion tick.</p></div>
+    <div class="card"><h3>Ready for the Japanese market</h3><p>Text is held as data, so games can be localised the same way as the platform. I have already worked on the Japanese strings across the player app.</p></div>
+  </div>
+  <p style="font-size:10.5pt;margin-top:14px">I have not measured learner outcomes yet, and I am not claiming numbers. The first thing I would do with the team is put these in front of real learners and measure completion, replays and what they get wrong.</p>
+  <div class="foot"><span>Rémi Couture · Games for Project Ares</span><span>21</span></div>
+</section>
+
+<!-- 14 -->
+<section class="s">
+  <p class="eb">Honest status</p>
+  <h2>They are prototypes. Here is exactly what stands between them and production.</h2>
+  <div class="body two">
+    <div>
+      <table>
+        <tr><th style="width:38%">Open item</th><th>What it needs</th></tr>
+        <tr><td><b>SME review</b></td><td>All content is marked draft. Four games have review sheets ready; four still need one written. I need a few hours of expert time per game.</td></tr>
+        <tr><td><b>Learner playtesting</b></td><td>None yet. Internal staff first, then a friendly customer cohort.</td></tr>
+        <tr><td><b>Framework mapping</b></td><td>The games do not yet name NICE work roles or KSAs. That mapping should be done with the content team so it matches the catalog.</td></tr>
+        <tr><td><b>Platform integration</b></td><td>The host contract is a draft that has not been agreed with the platform team. Course and mission text is mocked.</td></tr>
+        <tr><td><b>Localisation</b></td><td>English only today. Japanese follows SME sign-off.</td></tr>
+        <tr><td><b>Borrowed art and patterns</b></td><td>Network Defense uses sprites reused from another developer’s project with their go-ahead. Before shipping I would confirm that in writing or replace the art.</td></tr>
+        <tr><td><b>Depth</b></td><td>Three games have seeded variation, two have a second variant, three have one scenario. More cases are content work.</td></tr>
+      </table>
+    </div>
+    <div class="grid" style="align-content:start;gap:12px">
+      <div class="shot" style="height:2.7in"><img src="assets/queryhunt-debrief.jpg" alt=""></div>
+      <div class="card"><h3>Why I am showing you the gaps</h3><p>Because closing them is the job I am asking to do. None of it is research. It is review, integration and content, and I know exactly what each game needs.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>Rémi Couture · Games for Project Ares</span><span>22</span></div>
+</section>
+
+<!-- 15 -->
+<section class="s">
+  <p class="eb">The first 90 days</p>
+  <h2>From eight prototypes to games in the hub, with the team.</h2>
+  <div class="body grid g3" style="align-content:start">
+    <div class="card"><span class="pill">Days 1 to 30</span><h3>Get three in</h3>
+      <ul><li>Agree the host contract with the platform team and write the hub adapter.</li><li>SME review of Network Defense, Query Hunt and Cloud Command, using the sheets that exist.</li><li>Map those three to NICE work roles and KSAs with the content team.</li><li>Confirm or replace the borrowed art.</li></ul></div>
+    <div class="card"><span class="pill">Days 31 to 60</span><h3>Test and widen</h3>
+      <ul><li>Internal playtest. Measure completion, replays and common mistakes, then fix what confuses people.</li><li>Review sheets and SME pass for Phishing, Triage and SOC.</li><li>Japanese strings for the first three.</li><li>A second case for the game learners replay most.</li></ul></div>
+    <div class="card"><span class="pill">Days 61 to 90</span><h3>Finish and extend</h3>
+      <ul><li>Dispatch and Privilege Path through review and into the hub.</li><li>First new game from the design guide’s Tier 1 list, built with the games team.</li><li>An authoring guide so content developers can add scenarios themselves.</li><li>A short report on what the playtests showed.</li></ul></div>
+  </div>
+  <p style="font-size:10.5pt;margin-top:14px">These are targets, and they depend on SME and platform time I do not control. I would rather agree the order with you than promise a date I cannot own.</p>
+  <div class="foot"><span>Rémi Couture · Games for Project Ares</span><span>23</span></div>
+</section>
+
+<!-- recreate -->
+<section class="s">
+  <p class="eb">What is already on the table</p>
+  <h2>This is working software, not a proposal. Starting again would mean rebuilding five things at once.</h2>
+  <div class="body two" style="grid-template-columns:1.5fr 1fr">
+    <div>
+      <table>
+        <tr><th style="width:19%">Piece</th><th style="width:45%">What exists today</th><th>Without it</th></tr>
+        <tr><td><b>Game design</b></td><td>Eight different mechanics, each one built so it cannot be won without the knowledge</td><td>Finding a designer who knows both games and cyber training</td></tr>
+        <tr><td><b>Authored content</b></td><td>8 phishing messages with 32 cues, 6 alerts with 29 evidence items, 6 dispatch reports with 38 questions, 5 SQL challenges on 2 datasets, 3 access puzzles, 3 cloud checkpoints, and an explanation for every important mistake</td><td>Writer and SME time for every scenario from a blank page</td></tr>
+        <tr><td><b>Engineering</b></td><td>About 22,000 lines of TypeScript, eight static builds, one shared pattern</td><td>A front-end build from an empty folder</td></tr>
+        <tr><td><b>Balance and proof</b></td><td>209 passing tests, including the ones that prove the lazy strategies lose</td><td>Finding the exploits the hard way, with real learners</td></tr>
+        <tr><td><b>Review and integration</b></td><td>Four SME review packs ready to sign, and a draft host contract with an activity ID per game</td><td>Starting both conversations from nothing</td></tr>
+      </table>
+    </div>
+    <div class="grid" style="align-content:start;gap:12px">
+      <div class="card" style="border-color:#d6eab880"><h3>Ready to show a customer</h3><p>Any of the eight can be demoed in a browser today. No range to start, no sign-in, nothing to install. That is a new thing to put in front of a prospect this quarter.</p></div>
+      <div class="card"><h3>The rare part is the combination</h3><p>Game design, UX, front-end build, and knowledge of Ares from the inside. My 89 commits in the platform cover the world map, dashboard, debrief and the HUD screens, so these games are built to sit in the product, not beside it.</p></div>
+      <div class="card"><h3>One owner, low cost</h3><p>This does not need a new team or new infrastructure. It needs the person who built it, some SME hours, and a small integration step.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>Counts taken from the games’ data files, test suites and docs</span><span>24</span></div>
+</section>
+
+<!-- 16 -->
+<section class="s">
+  <p class="eb">Ways to keep this going</p>
+  <h2>I want to stay and build this with you. Here are three ways to make it work.</h2>
+  <div class="body grid g3" style="align-content:start">
+    <div class="card opt"><span class="pill">Preferred</span><div class="big">Full time, games and learner experience</div><div class="when">Current hours and rate</div><p>I move toward the games team. The 90-day plan runs as written, and I keep supporting the player UI I already own: world map, dashboard, debrief and the HUD screens.</p></div>
+    <div class="card opt"><span class="pill" style="background:#8fd3ea">Reduced</span><div class="big">Half time, games only</div><div class="when">About 20 hours a week</div><p>One focus: take the eight to production in priority order, then new games. The plan stretches to roughly twice the calendar time. UI work is by request.</p></div>
+    <div class="card opt"><span class="pill" style="background:#f3b58b">Minimum</span><div class="big">Per game, fixed scope</div><div class="when">Agreed game by game</div><p>You pick a game. I deliver it reviewed, integrated and tested for an agreed scope. No standing commitment, and the work continues at whatever pace you choose.</p></div>
+  </div>
+  <div class="grid g2" style="margin-top:16px">
+    <div class="card"><h3>What you keep</h3><p>Eight working games and the person who knows every rule in them. A designer with twenty years of game experience who also builds. Someone already inside the product: the world map, dashboard, debrief and 16 HUD screens are my work.</p></div>
+    <div class="card"><h3>What stops without an owner</h3><p>These games are not in the platform repository yet. Without someone to take them through review and integration, they stay prototypes, and the open slots in the hub stay open.</p></div>
+  </div>
+  <p style="font-size:12pt;margin-top:14px;color:var(--ink)"><b>My ask:</b> thirty minutes to play two of them with you, and a decision on which option fits. The games are ready to demo to a customer now; the only open question is who takes them the rest of the way.</p>
+  <div class="foot"><span>Rémi Couture · rcouture@gmail.com</span><span>25</span></div>
+</section>
+
+<div id="player"><div class="bar"><span id="player-name">Playing</span><button type="button" id="player-close">✕ Close and return to the deck</button></div><iframe title="Game" allow="fullscreen"></iframe></div>
+<script>
+(function () {
+  document.documentElement.classList.add('can-play');
+  var player = document.getElementById('player'), frame = player.querySelector('iframe');
+  function close() { player.classList.remove('on'); frame.src = 'about:blank'; }
+  document.querySelectorAll('[data-play]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      document.querySelectorAll('video').forEach(function (v) { v.pause(); });
+      document.getElementById('player-name').textContent = b.closest('.s').querySelector('h2').textContent;
+      frame.src = b.getAttribute('data-play'); player.classList.add('on'); frame.focus();
+    });
+  });
+  document.getElementById('player-close').addEventListener('click', close);
+  addEventListener('keydown', function (e) { if (e.key === 'Escape' && player.classList.contains('on')) close(); });
+})();
+</script>
+<div class="playhint">Scroll or use ↑ ↓ · videos play on screen · click “Play this game” on any game slide</div>
+<script>
+(function () {
+  function fit() { document.documentElement.style.setProperty('--z', Math.min(1, (window.innerWidth - 24) / 1280, (window.innerHeight - 24) / 720)); }
+  fit(); addEventListener('resize', fit);
+  var io = new IntersectionObserver(function (es) { es.forEach(function (e) { var v = e.target; if (e.isIntersecting) { v.play().catch(function () {}); } else { v.pause(); } }); }, { threshold: 0.6 });
+  document.querySelectorAll('video:not([data-manual])').forEach(function (v) { io.observe(v); });
+  var slides = [].slice.call(document.querySelectorAll('.s'));
+  addEventListener('keydown', function (e) {
+    var d = (e.key === 'ArrowDown' || e.key === 'PageDown' || e.key === ' ' || e.key === 'ArrowRight') ? 1 : (e.key === 'ArrowUp' || e.key === 'PageUp' || e.key === 'ArrowLeft') ? -1 : 0;
+    if (!d) return; e.preventDefault();
+    var mid = innerHeight / 2, cur = 0, best = 1e9;
+    slides.forEach(function (s, i) { var r = s.getBoundingClientRect(); var dist = Math.abs((r.top + r.bottom) / 2 - mid); if (dist < best) { best = dist; cur = i; } });
+    var t = slides[Math.max(0, Math.min(slides.length - 1, cur + d))]; t.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  });
+})();
+</script>
+</body>
+</html>
