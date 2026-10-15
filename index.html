@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
 <meta name="referrer" content="no-referrer">
-<title>Eight training games for Project Ares — Rémi Couture</title>
+<title>Twenty-two training games for Project Ares — Rémi Couture</title>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 @page{size:13.333in 7.5in;margin:0}
@@ -110,6 +110,7 @@ td b{color:var(--ink)}
 @media print{.cover-video,.play-btn,#player{display:none!important}}
 .strip{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:16px;flex:1;align-content:center}.strip .wall-t{aspect-ratio:16/6.2}
 .strip .wall-t figcaption{font-size:9.5pt}
+.lineup .cat-t img{height:.66in;width:100%;object-fit:cover;object-position:top}.lineup .cat-label{margin-bottom:5px}.lineup h2{font-size:24pt}
 </style>
 </head>
 <body>
@@ -119,7 +120,7 @@ td b{color:var(--ink)}
   <div class="mosaic"><img src="assets/network-defense-play.jpg"><img src="assets/phishing-play.jpg"><img src="assets/triage-play.jpg"><img src="assets/soc-play.jpg"><img src="assets/dispatch-play.jpg"><img src="assets/queryhunt-play.jpg"><img src="assets/cloud-play.jpg"><img src="assets/privilege-play.jpg"></div>
   <video class="cover-video" src="assets/video/timelapse.mp4" muted loop playsinline preload="metadata"></video>
   <p class="eb">A proposal for Project Ares · Rémi Couture</p>
-  <h1>Eight training games,<br>already playable.</h1>
+  <h1>Twenty-two training games,<br>already playable.</h1>
   <p class="sub" style="font-size:16pt;color:#dfe6f3;max-width:9in">What I have built for Ares on my own initiative, why it teaches, how it fits the platform, and a plan to keep building games for Circadence and its clients.</p>
 </section>
 
@@ -130,7 +131,7 @@ td b{color:var(--ink)}
   <div class="body reel-grid">
     <div class="shot reel-video"><video src="assets/video/ares-trailer.mp4" poster="assets/video/ares-trailer.jpg" controls playsinline preload="metadata" data-manual></video></div>
     <div class="grid" style="align-content:start;gap:10px">
-      <div class="card"><h3>What is in it</h3><ul><li>The eight games in this proposal.</li><li>Eight more built since, from incident scoping to firewall rule order.</li><li>Six remixes of the Games Hub titles, with new twists.</li></ul></div>
+      <div class="card"><h3>What is in it</h3><ul><li>The original eight, profiled in this proposal.</li><li>Eight more built since, from incident scoping to firewall rule order.</li><li>Six remixes of the Games Hub titles, with new twists.</li></ul></div>
       <div class="card"><h3>Play them all</h3><p><a href="https://remiclassic.github.io/ares-cyber-games/" style="color:#d6eab8">remiclassic.github.io/ares-cyber-games</a>: every game, each with a how-to-play video. Real gameplay, an original soundtrack, cut to the beat.</p></div>
     </div>
   </div>
@@ -140,11 +141,11 @@ td b{color:var(--ink)}
 <!-- 2 -->
 <section class="s">
   <p class="eb">The short version</p>
-  <h2>I have eight working educational games for Ares. I would like to keep making them.</h2>
+  <h2>I have twenty-two working educational games for Ares. I would like to keep making them.</h2>
   <div class="grid g4" style="align-content:start;margin-top:22px">
-    <div class="stat"><b>8</b><span>games, each playable from briefing to debrief in a browser</span></div>
-    <div class="stat"><b>209</b><span>automated tests, all passing, covering the learning rules of every game</span></div>
-    <div class="stat"><b>8</b><span>different genres: strategy, inbox drill, triage board, graph puzzle, SOC case, dispatch desk, SQL hunt, arcade flight</span></div>
+    <div class="stat"><b>22</b><span>games, each playable from briefing to debrief in a browser</span></div>
+    <div class="stat"><b>318</b><span>automated tests, all passing, covering the learning rules of every game</span></div>
+    <div class="stat"><b>21</b><span>different genres, from isometric strategy and SQL hunts to a card duel, a physics sticker pile and an orbital shooter</span></div>
     <div class="stat"><b>0</b><span>ranges to spin up. Each game is a static bundle that embeds in a course page</span></div>
   </div>
   <div class="strip"><figure class="wall-t"><video src="assets/video/network-defense.mp4" poster="assets/video/network-defense.jpg" muted loop playsinline preload="metadata"></video><figcaption>Network Defense</figcaption></figure><figure class="wall-t"><video src="assets/video/phishing.mp4" poster="assets/video/phishing.jpg" muted loop playsinline preload="metadata"></video><figcaption>Phishing Speed Drill</figcaption></figure><figure class="wall-t"><video src="assets/video/triage.mp4" poster="assets/video/triage.jpg" muted loop playsinline preload="metadata"></video><figcaption>Incident Triage Race</figcaption></figure><figure class="wall-t"><video src="assets/video/soc.mp4" poster="assets/video/soc.jpg" muted loop playsinline preload="metadata"></video><figcaption>SOC Dashboard</figcaption></figure><figure class="wall-t"><video src="assets/video/dispatch.mp4" poster="assets/video/dispatch.jpg" muted loop playsinline preload="metadata"></video><figcaption>Cyber Dispatch</figcaption></figure><figure class="wall-t"><video src="assets/video/queryhunt.mp4" poster="assets/video/queryhunt.jpg" muted loop playsinline preload="metadata"></video><figcaption>Query Hunt</figcaption></figure><figure class="wall-t"><video src="assets/video/cloud.mp4" poster="assets/video/cloud.jpg" muted loop playsinline preload="metadata"></video><figcaption>Cloud Command</figcaption></figure><figure class="wall-t"><video src="assets/video/privilege.mp4" poster="assets/video/privilege.jpg" muted loop playsinline preload="metadata"></video><figcaption>Privilege Path</figcaption></figure></div>
@@ -158,7 +159,7 @@ td b{color:var(--ink)}
 
 <!-- 3 -->
 <section class="s">
-  <p class="eb">The eight games</p>
+  <p class="eb">The original eight</p>
   <h2>One skill each. Three to five minutes. A debrief that explains the result.</h2>
   <div class="body">
   <table>
@@ -176,18 +177,67 @@ td b{color:var(--ink)}
   <div class="foot"><span>Rémi Couture · Games for Project Ares</span><span>04</span></div>
 </section>
 
+<!-- new eight -->
+<section class="s">
+  <p class="eb">Eight more, built since</p>
+  <h2>Same rules: one skill each, every mistake explained, lazy strategies proven to lose.</h2>
+  <div class="body">
+  <table>
+    <tr><th style="width:19%">Game</th><th style="width:16%">Plays like</th><th style="width:37%">What the learner practises</th><th>Authored content</th></tr>
+    <tr><td><b>Secure Stack</b></td><td>Physics sticker pile</td><td>Matching each threat to the control that really stops it; wrong drops explain why</td><td>5 islands, 17 threats and defences, a reason for every pairing, a field guide</td></tr>
+    <tr><td><b>Spot the Phish</b></td><td>Inbox with a coach</td><td>Reading an inbox: report, verify another way, or continue safely</td><td>10 messages, then 4 transfer messages; hosted on its own site</td></tr>
+    <tr><td><b>Blast Radius</b></td><td>Deduction puzzle</td><td>Scoping a compromise from aggregate sensors before containing it</td><td>3 cases with 2 truths each, every case proven solvable within its triage budget</td></tr>
+    <tr><td><b>Defense in Depth</b></td><td>Defence planning board</td><td>Layering controls across the attack chain while attackers adapt</td><td>3 waves, 16 ATT&amp;CK techniques, 15 controls with cost and friction</td></tr>
+    <tr><td><b>Counterplay</b></td><td>Card duel</td><td>Reading raw telemetry, naming the technique, playing the response that removes it</td><td>3 incidents, 16 techniques with look-alikes, 22 response cards</td></tr>
+    <tr><td><b>Bit by Bit</b></td><td>Gear workbench</td><td>Binary, subnet masks, sizing a subnet, finding the network an alert came from</td><td>10 tasks, every wrong answer explained</td></tr>
+    <tr><td><b>Rule Order</b></td><td>Rule-ordering puzzle</td><td>First-match firewall logic, shadowed rules, default action, least privilege</td><td>4 change tickets with test packets; the fewest changes found by search</td></tr>
+    <tr><td><b>Spot the Risks</b></td><td>Hidden-object scene</td><td>Physical and social-engineering risks at the office and at home, with decoys</td><td>2 illustrated scenes, 13 risks and 4 decoys, an issue and fix for each</td></tr>
+  </table>
+  </div>
+  <div class="foot"><span>Rémi Couture · Games for Project Ares</span><span>05</span></div>
+</section>
+
+<!-- remixes -->
+<section class="s">
+  <p class="eb">Six remixes of the Games Hub</p>
+  <h2>The hub games’ topics, rebuilt around a judgment twist.</h2>
+  <div class="body two" style="grid-template-columns:1.5fr 1fr">
+  <div><table>
+    <tr><th style="width:27%">Remix</th><th style="width:25%">Remix of</th><th>The twist</th></tr>
+    <tr><td><b>Pattern Patrol</b></td><td>RegExile <span style="color:var(--muted)">(games team)</span></td><td>Regex as detection engineering: catch the attack, not the noise</td></tr>
+    <tr><td><b>Port Authority</b></td><td>Portflow <span style="color:var(--muted)">(games team)</span></td><td>Ports by policy: allow, block or upgrade cleartext</td></tr>
+    <tr><td><b>Confidence Board</b></td><td>Trivialoot <span style="color:var(--muted)">(games team)</span></td><td>A six-category board with confidence wagers that reward calibration</td></tr>
+    <tr><td><b>Chain Breaker</b></td><td>Cylitaire: Kill Chain <span style="color:var(--muted)">(games team)</span></td><td>Rebuild an incident on the kill chain, then break it earliest</td></tr>
+    <tr><td><b>Tactic Orbit</b></td><td>Astro-Defense <span style="color:var(--muted)">(games team)</span></td><td>Tag incoming techniques with their tactic to raise the shield</td></tr>
+    <tr><td><b>Blind Spots</b></td><td>Threat Modeler <span style="color:var(--muted)">(games team)</span></td><td>Place sensors on a budget; scored on how early each attack path is seen</td></tr>
+  </table></div>
+  <div class="grid" style="align-content:start;gap:12px">
+    <div class="card"><h3>Why remix</h3><p>The hub games teach recall of frameworks well. Each remix keeps the topic and asks for a decision on top: a detection that must not over-fire, a confidence you must own, a chain you must break early.</p></div>
+    <div class="card"><h3>How they were made</h3><p>From each game’s topic and key art only. No code, levels, text or art copied, and every remix credits its original. They are an offer to the games team, not a replacement.</p></div>
+  </div>
+  </div>
+  <div class="foot"><span>Rémi Couture · Games for Project Ares</span><span>06</span></div>
+</section>
 
 <!-- wall -->
 <section class="s">
-  <p class="eb">All eight, in motion</p>
+  <p class="eb">The original eight, in motion</p>
   <h2>Every clip is real play: a decision, a mistake, the explanation, the fix.</h2>
   <div class="body wall"><figure class="wall-t"><video src="assets/video/network-defense.mp4" poster="assets/video/network-defense.jpg" muted loop playsinline preload="metadata"></video><figcaption>Network Defense</figcaption></figure><figure class="wall-t"><video src="assets/video/phishing.mp4" poster="assets/video/phishing.jpg" muted loop playsinline preload="metadata"></video><figcaption>Phishing Speed Drill</figcaption></figure><figure class="wall-t"><video src="assets/video/triage.mp4" poster="assets/video/triage.jpg" muted loop playsinline preload="metadata"></video><figcaption>Incident Triage Race</figcaption></figure><figure class="wall-t"><video src="assets/video/soc.mp4" poster="assets/video/soc.jpg" muted loop playsinline preload="metadata"></video><figcaption>SOC Dashboard Challenge</figcaption></figure><figure class="wall-t"><video src="assets/video/dispatch.mp4" poster="assets/video/dispatch.jpg" muted loop playsinline preload="metadata"></video><figcaption>Cyber Dispatch</figcaption></figure><figure class="wall-t"><video src="assets/video/queryhunt.mp4" poster="assets/video/queryhunt.jpg" muted loop playsinline preload="metadata"></video><figcaption>Query Hunt</figcaption></figure><figure class="wall-t"><video src="assets/video/cloud.mp4" poster="assets/video/cloud.jpg" muted loop playsinline preload="metadata"></video><figcaption>Cloud Command</figcaption></figure><figure class="wall-t"><video src="assets/video/privilege.mp4" poster="assets/video/privilege.jpg" muted loop playsinline preload="metadata"></video><figcaption>Privilege Path Puzzle</figcaption></figure></div>
-  <div class="foot"><span>Recorded from the working builds</span><span>05</span></div>
+  <div class="foot"><span>Recorded from the working builds</span><span>07</span></div>
+</section>
+
+<!-- wall 2 -->
+<section class="s">
+  <p class="eb">Fourteen more, in motion</p>
+  <h2>The newer games and the remixes, recorded from the working builds.</h2>
+  <div class="body wall" style="grid-template-columns:repeat(5,1fr)"><figure class="wall-t"><video src="assets/video/secure-stack.mp4" poster="assets/video/secure-stack.jpg" muted loop playsinline preload="metadata"></video><figcaption>Secure Stack</figcaption></figure><figure class="wall-t"><video src="assets/video/spot-the-phish.mp4" poster="assets/video/spot-the-phish.jpg" muted loop playsinline preload="metadata"></video><figcaption>Spot the Phish</figcaption></figure><figure class="wall-t"><video src="assets/video/blast-radius.mp4" poster="assets/video/blast-radius.jpg" muted loop playsinline preload="metadata"></video><figcaption>Blast Radius</figcaption></figure><figure class="wall-t"><video src="assets/video/defense-in-depth.mp4" poster="assets/video/defense-in-depth.jpg" muted loop playsinline preload="metadata"></video><figcaption>Defense in Depth</figcaption></figure><figure class="wall-t"><video src="assets/video/counterplay.mp4" poster="assets/video/counterplay.jpg" muted loop playsinline preload="metadata"></video><figcaption>Counterplay</figcaption></figure><figure class="wall-t"><video src="assets/video/bit-by-bit.mp4" poster="assets/video/bit-by-bit.jpg" muted loop playsinline preload="metadata"></video><figcaption>Bit by Bit</figcaption></figure><figure class="wall-t"><video src="assets/video/rule-order.mp4" poster="assets/video/rule-order.jpg" muted loop playsinline preload="metadata"></video><figcaption>Rule Order</figcaption></figure><figure class="wall-t"><video src="assets/video/spot-the-risks.mp4" poster="assets/video/spot-the-risks.jpg" muted loop playsinline preload="metadata"></video><figcaption>Spot the Risks</figcaption></figure><figure class="wall-t"><video src="assets/video/pattern-patrol.mp4" poster="assets/video/pattern-patrol.jpg" muted loop playsinline preload="metadata"></video><figcaption>Pattern Patrol</figcaption></figure><figure class="wall-t"><video src="assets/video/port-authority.mp4" poster="assets/video/port-authority.jpg" muted loop playsinline preload="metadata"></video><figcaption>Port Authority</figcaption></figure><figure class="wall-t"><video src="assets/video/confidence-board.mp4" poster="assets/video/confidence-board.jpg" muted loop playsinline preload="metadata"></video><figcaption>Confidence Board</figcaption></figure><figure class="wall-t"><video src="assets/video/chain-breaker.mp4" poster="assets/video/chain-breaker.jpg" muted loop playsinline preload="metadata"></video><figcaption>Chain Breaker</figcaption></figure><figure class="wall-t"><video src="assets/video/tactic-orbit.mp4" poster="assets/video/tactic-orbit.jpg" muted loop playsinline preload="metadata"></video><figcaption>Tactic Orbit</figcaption></figure><figure class="wall-t"><video src="assets/video/blind-spots.mp4" poster="assets/video/blind-spots.jpg" muted loop playsinline preload="metadata"></video><figcaption>Blind Spots</figcaption></figure></div>
+  <div class="foot"><span>Recorded from the working builds</span><span>08</span></div>
 </section>
 
 <!-- reel -->
 <section class="s">
-  <p class="eb">Watch all eight in three minutes</p>
+  <p class="eb">Watch the original eight in three minutes</p>
   <h2>The gameplay reel: every game, one mistake, one explanation, one fix.</h2>
   <div class="body reel-grid">
     <div class="shot reel-video"><video src="gameplay-reel.mp4" poster="assets/video/network-defense.jpg" controls playsinline preload="metadata" data-manual></video></div>
@@ -196,13 +246,13 @@ td b{color:var(--ink)}
       <div class="card"><h3>Also in this folder</h3><p><a href="gameplay-reel.mp4" style="color:#d6eab8">Download the reel</a> or <a href="pitch.pdf" style="color:#d6eab8">the slides as a PDF</a>. Every game slide has a Play button.</p></div>
     </div>
   </div>
-  <div class="foot"><span>Recorded from the working builds</span><span>06</span></div>
+  <div class="foot"><span>Recorded from the working builds</span><span>09</span></div>
 </section>
 
 <!-- graphics -->
 <section class="s">
   <p class="eb">The look</p>
-  <h2>Eight interfaces, one visual language. Dense when it needs to be, never confusing.</h2>
+  <h2>Twenty-two interfaces, one visual language. Dense when it needs to be, never confusing.</h2>
   <div class="body gfx">
     <figure><img src="assets/network-defense-rule.jpg" alt=""><figcaption><b>Rule editor</b> with a live preview of who the rule allows and denies</figcaption></figure>
     <figure><img src="assets/privilege-verify.jpg" alt=""><figcaption><b>Before and after table</b> that proves a fix kept business access</figcaption></figure>
@@ -213,7 +263,7 @@ td b{color:var(--ink)}
     <figure><img src="assets/dispatch-debrief.jpg" alt=""><figcaption><b>Four-part score</b> with response time kept separate</figcaption></figure>
     <figure><img src="assets/cloud-outcome.jpg" alt=""><figcaption><b>Feedback built from the simulation’s own numbers</b></figcaption></figure>
   </div>
-  <div class="foot"><span>Status is always shown with shape and icon as well as colour</span><span>07</span></div>
+  <div class="foot"><span>Status is always shown with shape and icon as well as colour</span><span>10</span></div>
 </section>
 
 <!-- game 1 -->
@@ -238,7 +288,7 @@ td b{color:var(--ink)}
       <div class="gs-why"><p><b>Why it sticks.</b> The learner watches a rule succeed or fail on live traffic, so cause and effect are remembered together.</p><p><b>Where it fits Ares.</b> Fits the reserved packet-gate and network-segmentation slots. Firewall and ACL rules are listed as untapped.</p></div>
     </div>
   </div>
-  <div class="foot"><span>Gameplay recorded from the working build · Quotes from the game’s data file</span><span>08</span></div>
+  <div class="foot"><span>Gameplay recorded from the working build · Quotes from the game’s data file</span><span>11</span></div>
 </section>
 
 <!-- game 2 -->
@@ -263,7 +313,7 @@ td b{color:var(--ink)}
       <div class="gs-why"><p><b>Why it sticks.</b> Citing the evidence before deciding builds the habit of looking, not guessing.</p><p><b>Where it fits Ares.</b> Fits the reserved phish-sprint slot. Suits awareness training for every employee, not only analysts.</p></div>
     </div>
   </div>
-  <div class="foot"><span>Gameplay recorded from the working build · Quotes from the game’s data file</span><span>09</span></div>
+  <div class="foot"><span>Gameplay recorded from the working build · Quotes from the game’s data file</span><span>12</span></div>
 </section>
 
 <!-- game 3 -->
@@ -288,7 +338,7 @@ td b{color:var(--ink)}
       <div class="gs-why"><p><b>Why it sticks.</b> Being wrong about the quiet alert, then seeing why, is the lesson people repeat to colleagues.</p><p><b>Where it fits Ares.</b> Matches the design guide’s “Alert Triage” concept. A natural team game for workshops.</p></div>
     </div>
   </div>
-  <div class="foot"><span>Gameplay recorded from the working build · Quotes from the game’s data file</span><span>10</span></div>
+  <div class="foot"><span>Gameplay recorded from the working build · Quotes from the game’s data file</span><span>13</span></div>
 </section>
 
 <!-- game 4 -->
@@ -313,7 +363,7 @@ td b{color:var(--ink)}
       <div class="gs-why"><p><b>Why it sticks.</b> Two truths with the same opening teach that the right call comes from evidence, not from matching a familiar story.</p><p><b>Where it fits Ares.</b> A step up from triage toward analyst missions, and a warm-up before a range investigation.</p></div>
     </div>
   </div>
-  <div class="foot"><span>Gameplay recorded from the working build · Quotes from the game’s data file</span><span>11</span></div>
+  <div class="foot"><span>Gameplay recorded from the working build · Quotes from the game’s data file</span><span>14</span></div>
 </section>
 
 <!-- game 5 -->
@@ -338,7 +388,7 @@ td b{color:var(--ink)}
       <div class="gs-why"><p><b>Why it sticks.</b> Recoverable harm: the learner sees the damage a bad instruction causes, then gets to put it right.</p><p><b>Where it fits Ares.</b> Covers first response and handoff, part of the incident response lifecycle listed as untapped. Good for help desks.</p></div>
     </div>
   </div>
-  <div class="foot"><span>Gameplay recorded from the working build · Quotes from the game’s data file</span><span>12</span></div>
+  <div class="foot"><span>Gameplay recorded from the working build · Quotes from the game’s data file</span><span>15</span></div>
 </section>
 
 <!-- game 6 -->
@@ -363,7 +413,7 @@ td b{color:var(--ink)}
       <div class="gs-why"><p><b>Why it sticks.</b> Writing the query is retrieval practice. Being stopped from over-claiming teaches analytic discipline.</p><p><b>Where it fits Ares.</b> Fits the reserved log-hunt slot. Log analysis is listed as untapped.</p></div>
     </div>
   </div>
-  <div class="foot"><span>Gameplay recorded from the working build · Quotes from the game’s data file</span><span>13</span></div>
+  <div class="foot"><span>Gameplay recorded from the working build · Quotes from the game’s data file</span><span>16</span></div>
 </section>
 
 <!-- game 7 -->
@@ -388,7 +438,7 @@ td b{color:var(--ink)}
       <div class="gs-why"><p><b>Why it sticks.</b> The numbers in the feedback come from the simulation, so the explanation matches exactly what the learner did.</p><p><b>Where it fits Ares.</b> Cloud security is listed as untapped. The arcade layer shows the same content can carry a lighter style.</p></div>
     </div>
   </div>
-  <div class="foot"><span>Gameplay recorded from the working build · Quotes from the game’s data file</span><span>14</span></div>
+  <div class="foot"><span>Gameplay recorded from the working build · Quotes from the game’s data file</span><span>17</span></div>
 </section>
 
 <!-- game 8 -->
@@ -413,7 +463,7 @@ td b{color:var(--ink)}
       <div class="gs-why"><p><b>Why it sticks.</b> Predict, test, then explain: the learner commits to an answer before seeing the result.</p><p><b>Where it fits Ares.</b> Matches the design guide’s “IAM Auditor” concept. Identity and access is listed as untapped.</p></div>
     </div>
   </div>
-  <div class="foot"><span>Gameplay recorded from the working build · Quotes from the game’s data file</span><span>15</span></div>
+  <div class="foot"><span>Gameplay recorded from the working build · Quotes from the game’s data file</span><span>18</span></div>
 </section>
 <!-- 8 -->
 <section class="s">
@@ -427,8 +477,8 @@ td b{color:var(--ink)}
     <div class="card"><span class="tag">Reflection</span><h3>A debrief that replays your decisions</h3><p>Choice, observed result, why, and how it connects to the mission. Network Defense rebuilds the exact moment from the command log.</p></div>
     <div class="card"><span class="tag">Short and repeatable</span><h3>Five minutes, different next time</h3><p>Seeds and variants change traffic, attackers, the failing link, or which report is benign, so a replay is practice and not memorisation.</p></div>
   </div>
-  <p style="font-size:10.5pt;margin-top:14px">One rule runs through all eight: <b>the game score and the learning evidence are recorded separately.</b> As one debrief puts it, “this record is evidence, not a grade.” That is what makes the result usable for reporting.</p>
-  <div class="foot"><span>Rémi Couture · Games for Project Ares</span><span>16</span></div>
+  <p style="font-size:10.5pt;margin-top:14px">One rule runs through all twenty-two: <b>the game score and the learning evidence are recorded separately.</b> As one debrief puts it, “this record is evidence, not a grade.” That is what makes the result usable for reporting.</p>
+  <div class="foot"><span>Rémi Couture · Games for Project Ares</span><span>19</span></div>
 </section>
 
 <!-- 9 -->
@@ -445,6 +495,7 @@ td b{color:var(--ink)}
         <tr><td><b>Escalate everything</b></td><td>“Penalizes escalating everything alarming” and “penalizes monitoring everything”</td></tr>
         <tr><td><b>Trust the label</b></td><td>“Never treats the severity tag as a valid justification”</td></tr>
         <tr><td><b>Always investigate first</b></td><td>“Investigating first is not always right: delay lets the incident progress”</td></tr>
+        <tr><td><b>Isolate, flag or bet on everything</b></td><td>Newer games too: isolate-all stays under 60, flagging everything can’t reach 100, and “certain” on everything loses</td></tr>
         <tr><td><b>Go fast</b></td><td>“Slow but correct play still earns the top rating”; speed only counts after a correct decision</td></tr>
       </table>
     </div>
@@ -455,7 +506,7 @@ td b{color:var(--ink)}
       <div class="card"><h3>A reason to play again</h3><p>Ratings, a clean-run target, and a variant that changes the right answer. Query Hunt’s second dataset makes the highest count the wrong account to follow.</p></div>
     </div>
   </div>
-  <div class="foot"><span>Test names quoted from the project’s test suites · 209 of 209 passing</span><span>17</span></div>
+  <div class="foot"><span>Test names quoted from the project’s test suites · 318 of 318 passing</span><span>20</span></div>
 </section>
 
 <!-- 10 -->
@@ -464,32 +515,34 @@ td b{color:var(--ink)}
   <h2>These are engineered to be reviewed, tested, embedded and extended.</h2>
   <div class="body grid g3" style="align-content:start">
     <div class="card"><h3>Content lives in one file per game</h3><p>Scenarios, evidence, policy and explanations sit in a single data file, apart from the code. A content developer or SME can review and change the teaching without touching the engine.</p></div>
-    <div class="card"><h3>The rules run without a browser</h3><p>Each game’s simulation is pure logic, separate from the screen. That is why 209 tests can check the learning rules in under two seconds.</p></div>
+    <div class="card"><h3>The rules run without a browser</h3><p>Each game’s simulation is pure logic, separate from the screen. That is why 318 tests can check the learning rules in under two seconds.</p></div>
     <div class="card"><h3>Deterministic and replayable</h3><p>The same seed and the same commands always give the same result. It powers the debrief replays, and it would let the platform verify a result on the server.</p></div>
     <div class="card"><h3>A host contract already written</h3><p>Each game posts started, statement, completed and navigate messages to its host page, with an activity ID per scenario. A draft integration document describes the payloads.</p></div>
-    <div class="card"><h3>SME review packs ready to sign</h3><p>Four games come with a review sheet that lists every objective, simplification and explanation for an expert to approve, correct or reject.</p></div>
+    <div class="card"><h3>SME review packs ready to sign</h3><p>Four games come with a review sheet, and the fourteen newer ones with a design doc ending in an SME checklist. Each lists every objective, simplification and explanation for an expert to approve, correct or reject.</p></div>
     <div class="card"><h3>Accessible by design</h3><p>Keyboard play, focus-trapped dialogs, screen-reader announcements, and reduced-motion and larger-text settings. Layouts stack for small screens.</p></div>
   </div>
   <div class="grid g4" style="margin-top:16px">
-    <div class="stat"><b style="font-size:22pt">~22,000</b><span>lines of TypeScript, including tests</span></div>
-    <div class="stat"><b style="font-size:22pt">8 pages</b><span>one static page per game, one build</span></div>
+    <div class="stat"><b style="font-size:22pt">~30,000</b><span>lines of TypeScript, including tests</span></div>
+    <div class="stat"><b style="font-size:22pt">22 pages</b><span>one static page per game, one build</span></div>
     <div class="stat"><b style="font-size:22pt">0 servers</b><span>no backend, no range, no sign-in</span></div>
     <div class="stat"><b style="font-size:22pt">AI-assisted</b><span>I design and direct, and build with AI tooling. That is how one person ships this much.</span></div>
   </div>
-  <div class="foot"><span>Rémi Couture · Games for Project Ares</span><span>18</span></div>
+  <div class="foot"><span>Rémi Couture · Games for Project Ares</span><span>21</span></div>
 </section>
 
 <!-- catalog -->
-<section class="s">
+<section class="s lineup">
   <p class="eb">The full line-up</p>
-  <h2>With these, the Games Hub goes from 6 games to 14.</h2>
-  <div class="body" style="margin-top:14px">
-    <p class="cat-label"><b class="lime">New · my eight, playable now.</b> Judgment under pressure: what to do with incomplete evidence, limited time and a business to keep running.</p>
+  <h2>Twenty-two games beside the hub’s six.</h2>
+  <div class="body" style="margin-top:10px">
+    <p class="cat-label"><b class="lime">The original eight.</b> Judgment under pressure: incomplete evidence, limited time and a business to keep running.</p>
     <div class="cat cat8"><figure class="cat-t"><img src="assets/video/network-defense.jpg" alt=""><figcaption><b>Network Defense</b><span>Routes, evidence, scoped access rules</span></figcaption></figure><figure class="cat-t"><img src="assets/video/phishing.jpg" alt=""><figcaption><b>Phishing Speed Drill</b><span>Sender, link and reply-to evidence</span></figcaption></figure><figure class="cat-t"><img src="assets/video/triage.jpg" alt=""><figcaption><b>Incident Triage Race</b><span>Priority from evidence and impact</span></figcaption></figure><figure class="cat-t"><img src="assets/video/soc.jpg" alt=""><figcaption><b>SOC Dashboard Challenge</b><span>Discriminating evidence, proportionate response</span></figcaption></figure><figure class="cat-t"><img src="assets/video/dispatch.jpg" alt=""><figcaption><b>Cyber Dispatch</b><span>First response and clean handoff</span></figcaption></figure><figure class="cat-t"><img src="assets/video/queryhunt.jpg" alt=""><figcaption><b>Query Hunt</b><span>SQL log investigation</span></figcaption></figure><figure class="cat-t"><img src="assets/video/cloud.jpg" alt=""><figcaption><b>Cloud Command</b><span>Capacity, cost, least privilege</span></figcaption></figure><figure class="cat-t"><img src="assets/video/privilege.jpg" alt=""><figcaption><b>Privilege Path Puzzle</b><span>Groups, grants and minimal fixes</span></figcaption></figure></div>
-    <p class="cat-label" style="margin-top:14px"><b>In the hub today · built by the games team.</b> Framework fluency: tactics, the kill chain, patterns, ports and attack paths.</p>
-    <div class="cat cat6"><figure class="cat-t"><img src="assets/hub/astro-defense.jpg" alt=""><figcaption><b>Astro-Defense</b><span>ATT&amp;CK tactics and kill chain responses</span></figcaption></figure><figure class="cat-t"><img src="assets/hub/cylitaire.jpg" alt=""><figcaption><b>Cylitaire: Kill Chain</b><span>Kill chain order and tools</span></figcaption></figure><figure class="cat-t"><img src="assets/hub/trivialoot.jpg" alt=""><figcaption><b>Trivialoot</b><span>Six-category knowledge board</span></figcaption></figure><figure class="cat-t"><img src="assets/hub/regexile.jpg" alt=""><figcaption><b>RegExile</b><span>Regular expressions</span></figcaption></figure><figure class="cat-t"><img src="assets/hub/portflow.jpg" alt=""><figcaption><b>Portflow</b><span>Ports and protocols</span></figcaption></figure><figure class="cat-t"><img src="assets/hub/threat-modeler.jpg" alt=""><figcaption><b>Threat Modeler</b><span>Attack paths and detection coverage</span></figcaption></figure></div>
+    <p class="cat-label" style="margin-top:10px"><b class="lime">Eight more, built since.</b> Scoping, layering, telemetry, subnets, firewall order, awareness.</p>
+    <div class="cat cat8"><figure class="cat-t"><img src="assets/video/secure-stack.jpg" alt=""><figcaption><b>Secure Stack</b><span>Physics sticker pile</span></figcaption></figure><figure class="cat-t"><img src="assets/video/spot-the-phish.jpg" alt=""><figcaption><b>Spot the Phish</b><span>Inbox with a coach</span></figcaption></figure><figure class="cat-t"><img src="assets/video/blast-radius.jpg" alt=""><figcaption><b>Blast Radius</b><span>Deduction puzzle</span></figcaption></figure><figure class="cat-t"><img src="assets/video/defense-in-depth.jpg" alt=""><figcaption><b>Defense in Depth</b><span>Defence planning board</span></figcaption></figure><figure class="cat-t"><img src="assets/video/counterplay.jpg" alt=""><figcaption><b>Counterplay</b><span>Card duel</span></figcaption></figure><figure class="cat-t"><img src="assets/video/bit-by-bit.jpg" alt=""><figcaption><b>Bit by Bit</b><span>Gear workbench</span></figcaption></figure><figure class="cat-t"><img src="assets/video/rule-order.jpg" alt=""><figcaption><b>Rule Order</b><span>Rule-ordering puzzle</span></figcaption></figure><figure class="cat-t"><img src="assets/video/spot-the-risks.jpg" alt=""><figcaption><b>Spot the Risks</b><span>Hidden-object scene</span></figcaption></figure></div>
+    <p class="cat-label" style="margin-top:10px"><b class="lime">Six remixes.</b> New twists on the six games built by the games team, each credited to its original.</p>
+    <div class="cat cat6"><figure class="cat-t"><img src="assets/video/pattern-patrol.jpg" alt=""><figcaption><b>Pattern Patrol</b><span>Remix of RegExile</span></figcaption></figure><figure class="cat-t"><img src="assets/video/port-authority.jpg" alt=""><figcaption><b>Port Authority</b><span>Remix of Portflow</span></figcaption></figure><figure class="cat-t"><img src="assets/video/confidence-board.jpg" alt=""><figcaption><b>Confidence Board</b><span>Remix of Trivialoot</span></figcaption></figure><figure class="cat-t"><img src="assets/video/chain-breaker.jpg" alt=""><figcaption><b>Chain Breaker</b><span>Remix of Cylitaire: Kill Chain</span></figcaption></figure><figure class="cat-t"><img src="assets/video/tactic-orbit.jpg" alt=""><figcaption><b>Tactic Orbit</b><span>Remix of Astro-Defense</span></figcaption></figure><figure class="cat-t"><img src="assets/video/blind-spots.jpg" alt=""><figcaption><b>Blind Spots</b><span>Remix of Threat Modeler</span></figcaption></figure></div>
   </div>
-  <div class="foot"><span>Fourteen games across fourteen skills, and two kinds of learning that complement each other</span><span>19</span></div>
+  <div class="foot"><span>Twenty-two games across twenty-one genres, complementing the six already in the hub</span><span>22</span></div>
 </section>
 
 <!-- 11 -->
@@ -498,30 +551,31 @@ td b{color:var(--ink)}
   <h2>These add to the Games Hub. They cover ground the platform has already marked as open.</h2>
   <div class="body two" style="grid-template-columns:1.25fr 1fr">
     <div>
-      <p style="font-size:11.5pt">The six games in the hub today, built by the games team, cover ATT&amp;CK tactics, the kill chain, regex, ports, trivia and attack paths. The team’s own design guide lists what is still uncovered, and the router already holds five reserved game slots with nothing behind them.</p>
+      <p style="font-size:11.5pt">The hub’s six games cover ATT&amp;CK tactics, the kill chain, regex, ports, trivia and attack paths. The design guide lists what is still uncovered, and the router holds five empty reserved slots.</p>
       <table style="margin-top:12px">
         <tr><th style="width:36%">Open in the design guide or router</th><th>What I have playable</th></tr>
         <tr><td>Reserved slot <code>phish-sprint</code></td><td><b>Phishing Speed Drill</b></td></tr>
-        <tr><td>Reserved slot <code>log-hunt</code> · “Log Analysis / SIEM: entirely untapped”</td><td><b>Query Hunt</b></td></tr>
-        <tr><td>Reserved slots <code>packet-gate</code>, <code>network-segmentation-sim</code> · “Firewall / ACL Rules: entirely untapped”</td><td><b>Network Defense</b></td></tr>
+        <tr><td>Reserved slot <code>log-hunt</code> · “Log Analysis / SIEM: entirely untapped”</td><td><b>Query Hunt</b>, <b>Pattern Patrol</b></td></tr>
+        <tr><td>Reserved slots <code>packet-gate</code>, <code>network-segmentation-sim</code> · “Firewall / ACL Rules: entirely untapped”</td><td><b>Network Defense</b>, <b>Rule Order</b>, <b>Port Authority</b></td></tr>
         <tr><td>Tier 2 concept “Alert Triage”</td><td><b>Incident Triage Race</b>, <b>SOC Dashboard Challenge</b></td></tr>
         <tr><td>“Cloud Security (IAM, exposure): entirely untapped”</td><td><b>Cloud Command</b>, <b>Privilege Path Puzzle</b></td></tr>
-        <tr><td>“Incident Response Lifecycle: entirely untapped”</td><td><b>Cyber Dispatch</b> (first response and handoff)</td></tr>
+        <tr><td>“Incident Response Lifecycle: entirely untapped”</td><td><b>Cyber Dispatch</b>, <b>Blast Radius</b>, <b>Counterplay</b>, <b>Chain Breaker</b></td></tr>
+        <tr><td>Awareness for all staff (not on the list)</td><td><b>Secure Stack</b>, <b>Spot the Risks</b>, <b>Spot the Phish</b></td></tr>
       </table>
     </div>
     <div class="grid" style="align-content:start;gap:12px">
-      <div class="card"><h3>Different from what exists</h3><p>The hub’s games drill recall of frameworks. These drill judgment: what to do with incomplete evidence, limited time and a business to keep running. The two sets complement each other.</p></div>
+      <div class="card"><h3>Different from what exists</h3><p>The hub’s games drill recall of frameworks. These drill judgment: what to do with incomplete evidence, limited time and a business to keep running. The two sets complement each other, and six remixes bridge them: the hub games’ topics with a judgment twist.</p></div>
       <div class="card"><h3>They line up with the team’s approval gate</h3><p>The mechanic collapses without domain knowledge. Accuracy outranks speed. Feedback happens during play. Replay is driven by content. Explicit NICE work-role and KSA mapping is the piece still to add, with the content team.</p></div>
       <div class="card"><h3>Small integration step</h3><p>The hub uses a ready, score-update, complete message flow. My games already post the equivalent events, so each needs a thin adapter, not a rewrite.</p></div>
     </div>
   </div>
-  <div class="foot"><span>Gaps quoted from docs/guides/minigames (README and game design guide)</span><span>20</span></div>
+  <div class="foot"><span>Gaps quoted from docs/guides/minigames (README and game design guide)</span><span>23</span></div>
 </section>
 
 <!-- 12 -->
 <section class="s">
   <p class="eb">More games, in any style</p>
-  <h2>Eight genres so far. The method is what scales, not one look.</h2>
+  <h2>Twenty-one genres so far. The method is what scales, not one look.</h2>
   <div class="body two" style="grid-template-columns:1fr 1.15fr">
     <div>
       <h3 style="margin-bottom:8px">How a new game gets made</h3>
@@ -541,13 +595,13 @@ td b{color:var(--ink)}
         <tr><td><b>IR Sequencer</b></td><td>Tier 1 in the design guide. Order the response steps under pressure.</td></tr>
         <tr><td><b>CSF Incident Sorter</b></td><td>Tier 1. Route events to Identify, Protect, Detect, Respond, Recover.</td></tr>
         <tr><td><b>ATT&amp;CK Technique Mapper</b></td><td>Tier 1. Takes the hub from tactic level to technique level.</td></tr>
-        <tr><td><b>More cases for the eight</b></td><td>New scenarios are content, not code. Query Hunt Case 02, a second phishing inbox, a harder shift.</td></tr>
+        <tr><td><b>More cases for every game</b></td><td>New scenarios are content, not code. Query Hunt Case 02, a second phishing inbox, a harder shift.</td></tr>
         <tr><td><b>Team modes for workshops</b></td><td>Head-to-head triage and dispatch for Security Immersion Workshop events, with a shared leaderboard.</td></tr>
         <tr><td><b>Mission warm-ups</b></td><td>A two-minute game before a range mission that drills the one concept the mission depends on.</td></tr>
       </table>
     </div>
   </div>
-  <div class="foot"><span>Rémi Couture · Games for Project Ares</span><span>21</span></div>
+  <div class="foot"><span>Rémi Couture · Games for Project Ares</span><span>24</span></div>
 </section>
 
 <!-- 13 -->
@@ -563,7 +617,7 @@ td b{color:var(--ink)}
     <div class="card"><h3>Ready for the Japanese market</h3><p>Text is held as data, so games can be localised the same way as the platform. I have already worked on the Japanese strings across the player app.</p></div>
   </div>
   <p style="font-size:10.5pt;margin-top:14px">I have not measured learner outcomes yet, and I am not claiming numbers. The first thing I would do with the team is put these in front of real learners and measure completion, replays and what they get wrong.</p>
-  <div class="foot"><span>Rémi Couture · Games for Project Ares</span><span>22</span></div>
+  <div class="foot"><span>Rémi Couture · Games for Project Ares</span><span>25</span></div>
 </section>
 
 <!-- 14 -->
@@ -574,12 +628,12 @@ td b{color:var(--ink)}
     <div>
       <table>
         <tr><th style="width:38%">Open item</th><th>What it needs</th></tr>
-        <tr><td><b>SME review</b></td><td>All content is marked draft. Four games have review sheets ready; four still need one written. I need a few hours of expert time per game.</td></tr>
+        <tr><td><b>SME review</b></td><td>All content is draft. Four games have review sheets and fourteen have SME checklists; four still need one. I need a few hours of expert time per game.</td></tr>
         <tr><td><b>Learner playtesting</b></td><td>None yet. Internal staff first, then a friendly customer cohort.</td></tr>
         <tr><td><b>Framework mapping</b></td><td>The games do not yet name NICE work roles or KSAs. That mapping should be done with the content team so it matches the catalog.</td></tr>
         <tr><td><b>Platform integration</b></td><td>The host contract is a draft that has not been agreed with the platform team. Course and mission text is mocked.</td></tr>
         <tr><td><b>Localisation</b></td><td>English only today. Japanese follows SME sign-off.</td></tr>
-        <tr><td><b>Borrowed art and patterns</b></td><td>Network Defense uses sprites reused from another developer’s project with their go-ahead. Before shipping I would confirm that in writing or replace the art.</td></tr>
+        <tr><td><b>Borrowed art and remixes</b></td><td>Network Defense reuses sprites from another developer, with their go-ahead; I would confirm in writing or replace them. The six remixes credit the games team and need its blessing before they ship.</td></tr>
         <tr><td><b>Depth</b></td><td>Three games have seeded variation, two have a second variant, three have one scenario. More cases are content work.</td></tr>
       </table>
     </div>
@@ -588,13 +642,13 @@ td b{color:var(--ink)}
       <div class="card"><h3>Why I am showing you the gaps</h3><p>Because closing them is the job I am asking to do. None of it is research. It is review, integration and content, and I know exactly what each game needs.</p></div>
     </div>
   </div>
-  <div class="foot"><span>Rémi Couture · Games for Project Ares</span><span>23</span></div>
+  <div class="foot"><span>Rémi Couture · Games for Project Ares</span><span>26</span></div>
 </section>
 
 <!-- 15 -->
 <section class="s">
   <p class="eb">The first 90 days</p>
-  <h2>From eight prototypes to games in the hub, with the team.</h2>
+  <h2>From twenty-two prototypes to games in the hub, with the team.</h2>
   <div class="body grid g3" style="align-content:start">
     <div class="card"><span class="pill">Days 1 to 30</span><h3>Get three in</h3>
       <ul><li>Agree the host contract with the platform team and write the hub adapter.</li><li>SME review of Network Defense, Query Hunt and Cloud Command, using the sheets that exist.</li><li>Map those three to NICE work roles and KSAs with the content team.</li><li>Confirm or replace the borrowed art.</li></ul></div>
@@ -604,7 +658,7 @@ td b{color:var(--ink)}
       <ul><li>Dispatch and Privilege Path through review and into the hub.</li><li>First new game from the design guide’s Tier 1 list, built with the games team.</li><li>An authoring guide so content developers can add scenarios themselves.</li><li>A short report on what the playtests showed.</li></ul></div>
   </div>
   <p style="font-size:10.5pt;margin-top:14px">These are targets, and they depend on SME and platform time I do not control. I would rather agree the order with you than promise a date I cannot own.</p>
-  <div class="foot"><span>Rémi Couture · Games for Project Ares</span><span>24</span></div>
+  <div class="foot"><span>Rémi Couture · Games for Project Ares</span><span>27</span></div>
 </section>
 
 <!-- recreate -->
@@ -615,20 +669,20 @@ td b{color:var(--ink)}
     <div>
       <table>
         <tr><th style="width:19%">Piece</th><th style="width:45%">What exists today</th><th>Without it</th></tr>
-        <tr><td><b>Game design</b></td><td>Eight different mechanics, each one built so it cannot be won without the knowledge</td><td>Finding a designer who knows both games and cyber training</td></tr>
+        <tr><td><b>Game design</b></td><td>Twenty-two games on twenty-one mechanics, each one built so it cannot be won without the knowledge</td><td>Finding a designer who knows both games and cyber training</td></tr>
         <tr><td><b>Authored content</b></td><td>8 phishing messages with 32 cues, 6 alerts with 29 evidence items, 6 dispatch reports with 38 questions, 5 SQL challenges on 2 datasets, 3 access puzzles, 3 cloud checkpoints, and an explanation for every important mistake</td><td>Writer and SME time for every scenario from a blank page</td></tr>
-        <tr><td><b>Engineering</b></td><td>About 22,000 lines of TypeScript, eight static builds, one shared pattern</td><td>A front-end build from an empty folder</td></tr>
-        <tr><td><b>Balance and proof</b></td><td>209 passing tests, including the ones that prove the lazy strategies lose</td><td>Finding the exploits the hard way, with real learners</td></tr>
+        <tr><td><b>Engineering</b></td><td>About 30,000 lines of TypeScript, twenty-one static game pages, one shared pattern</td><td>A front-end build from an empty folder</td></tr>
+        <tr><td><b>Balance and proof</b></td><td>318 passing tests, including the ones that prove the lazy strategies lose</td><td>Finding the exploits the hard way, with real learners</td></tr>
         <tr><td><b>Review and integration</b></td><td>Four SME review packs ready to sign, and a draft host contract with an activity ID per game</td><td>Starting both conversations from nothing</td></tr>
       </table>
     </div>
     <div class="grid" style="align-content:start;gap:12px">
-      <div class="card" style="border-color:#d6eab880"><h3>Ready to show a customer</h3><p>Any of the eight can be demoed in a browser today. No range to start, no sign-in, nothing to install. That is a new thing to put in front of a prospect this quarter.</p></div>
+      <div class="card" style="border-color:#d6eab880"><h3>Ready to show a customer</h3><p>Any of the twenty-two can be demoed in a browser today. No range to start, no sign-in, nothing to install. That is a new thing to put in front of a prospect this quarter.</p></div>
       <div class="card"><h3>The rare part is the combination</h3><p>Game design, UX, front-end build, and knowledge of Ares from the inside. My 89 commits in the platform cover the world map, dashboard, debrief and the HUD screens, so these games are built to sit in the product, not beside it.</p></div>
       <div class="card"><h3>One owner, low cost</h3><p>This does not need a new team or new infrastructure. It needs the person who built it, some SME hours, and a small integration step.</p></div>
     </div>
   </div>
-  <div class="foot"><span>Counts taken from the games’ data files, test suites and docs</span><span>25</span></div>
+  <div class="foot"><span>Counts taken from the games’ data files, test suites and docs</span><span>28</span></div>
 </section>
 
 <!-- 16 -->
@@ -637,15 +691,15 @@ td b{color:var(--ink)}
   <h2>I want to stay and build this with you. Here are three ways to make it work.</h2>
   <div class="body grid g3" style="align-content:start">
     <div class="card opt"><span class="pill">Preferred</span><div class="big">Full time, games and learner experience</div><div class="when">Current hours and rate</div><p>I move toward the games team. The 90-day plan runs as written, and I keep supporting the player UI I already own: world map, dashboard, debrief and the HUD screens.</p></div>
-    <div class="card opt"><span class="pill" style="background:#8fd3ea">Reduced</span><div class="big">Half time, games only</div><div class="when">About 20 hours a week</div><p>One focus: take the eight to production in priority order, then new games. The plan stretches to roughly twice the calendar time. UI work is by request.</p></div>
+    <div class="card opt"><span class="pill" style="background:#8fd3ea">Reduced</span><div class="big">Half time, games only</div><div class="when">About 20 hours a week</div><p>One focus: take the games to production in priority order, then new games. The plan stretches to roughly twice the calendar time. UI work is by request.</p></div>
     <div class="card opt"><span class="pill" style="background:#f3b58b">Minimum</span><div class="big">Per game, fixed scope</div><div class="when">Agreed game by game</div><p>You pick a game. I deliver it reviewed, integrated and tested for an agreed scope. No standing commitment, and the work continues at whatever pace you choose.</p></div>
   </div>
   <div class="grid g2" style="margin-top:16px">
-    <div class="card"><h3>What you keep</h3><p>Eight working games and the person who knows every rule in them. A designer with twenty years of game experience who also builds. Someone already inside the product: the world map, dashboard, debrief and 16 HUD screens are my work.</p></div>
+    <div class="card"><h3>What you keep</h3><p>Twenty-two working games and the person who knows every rule in them. A designer with twenty years of game experience who also builds. Someone already inside the product: the world map, dashboard, debrief and 16 HUD screens are my work.</p></div>
     <div class="card"><h3>What stops without an owner</h3><p>These games are not in the platform repository yet. Without someone to take them through review and integration, they stay prototypes, and the open slots in the hub stay open.</p></div>
   </div>
   <p style="font-size:12pt;margin-top:14px;color:var(--ink)"><b>My ask:</b> thirty minutes to play two of them with you, and a decision on which option fits. The games are ready to demo to a customer now; the only open question is who takes them the rest of the way.</p>
-  <div class="foot"><span>Rémi Couture · rcouture@gmail.com</span><span>26</span></div>
+  <div class="foot"><span>Rémi Couture · rcouture@gmail.com</span><span>29</span></div>
 </section>
 
 <div id="player"><div class="bar"><span id="player-name">Playing</span><button type="button" id="player-close">✕ Close and return to the deck</button></div><iframe title="Game" allow="fullscreen"></iframe></div>
