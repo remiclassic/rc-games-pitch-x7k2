@@ -281,7 +281,7 @@ td b{color:var(--ink)}
       </div>
     </div>
     <div class="gs-right">
-      <p class="eb">Game 1 of 8 · Isometric strategy</p>
+      <p class="eb">Game 1 of 22 · Isometric strategy</p>
       <h2>Network Defense: Keep Finance Online</h2>
       <p class="gs-teaches"><b class="lime">Teaches:</b> How routes and dependencies keep a service up, how to read evidence, and how to write an access rule that stops the attacker without stopping the business.</p>
       <div class="q "><small>Evidence on screen</small>“Source 198.51.100.23 is not on any approved list and is outside the company network.” “Destination: Finance — Remote desktop admin (RDP 3389).” “Pattern: repeated sign-in attempts, each with a different username.”</div><div class="q bad"><small>After a common mistake</small>“You connected Finance straight to the Gateway. Invoices reached Finance, but Finance couldn’t reach its database on the Core server, so each one failed. Services depend on other services — a path from the internet isn’t enough.”</div><div class="q "><small>Final challenge, no hints</small>“Which single rule best fits the policy?” Answer: <code>DENY 203.0.113.200 → HR : Admin console</code></div>
@@ -306,7 +306,7 @@ td b{color:var(--ink)}
       </div>
     </div>
     <div class="gs-right">
-      <p class="eb">Game 2 of 8 · Timed inbox drill</p>
+      <p class="eb">Game 2 of 22 · Timed inbox drill</p>
       <h2>Phishing Speed Drill: The Payroll Request</h2>
       <p class="gs-teaches"><b class="lime">Teaches:</b> Reading the sender, the reply-to and the real link destination, backing a call with evidence, and knowing when only a phone check can settle it.</p>
       <div class="q "><small>A look-alike domain</small><code>helpdesk@acme.example.it-notices.example</code> “A domain is read from the right. This address belongs to it-notices.example; ‘acme.example’ is only a label in front of it.”</div><div class="q "><small>A genuine address, still not safe</small>A bank-change request from a real colleague’s address: “The address is genuine, but a matching address doesn’t prove who is typing. Mailboxes get compromised.”</div><div class="q bad"><small>After a false alarm</small>“This was a real payslip notice. External mail and a generic greeting are not evidence by themselves; the domain, link, and timing all matched. False alarms slow down real work.”</div>
@@ -331,7 +331,7 @@ td b{color:var(--ink)}
       </div>
     </div>
     <div class="gs-right">
-      <p class="eb">Game 3 of 8 · Alert triage board</p>
+      <p class="eb">Game 3 of 22 · Alert triage board</p>
       <h2>Incident Triage Race: The Busy Morning</h2>
       <p class="gs-teaches"><b class="lime">Teaches:</b> Setting priority from evidence and business impact, linking alerts that are one incident, and revising when new facts arrive.</p>
       <div class="q "><small>Tagged “Low” in the queue</small>A new device on an account that “approves outgoing payments”. “The quietest alert in the queue turns out to be an attacker with a working sign-in on the payments portal. Business impact, not the severity tag, sets the urgency.”</div><div class="q "><small>A mid-shift update</small>“Infrastructure confirms change ticket CHG-4471: backups moved to a new offsite storage provider this morning… Nothing else in the queue is explained by it.”</div><div class="q bad"><small>A justification that always scores zero</small>“The severity tag says so.”</div>
@@ -356,7 +356,7 @@ td b{color:var(--ink)}
       </div>
     </div>
     <div class="gs-right">
-      <p class="eb">Game 4 of 8 · SOC investigation case</p>
+      <p class="eb">Game 4 of 22 · SOC investigation case</p>
       <h2>SOC Dashboard Challenge: A Strange Login</h2>
       <p class="gs-teaches"><b class="lime">Teaches:</b> Separating evidence that discriminates between explanations from evidence that fits both, and responding in proportion while data is leaving.</p>
       <div class="q "><small>Same opening, two possible truths</small>Compromise: “OUTLOOK.EXE → WINWORD.EXE (Invoice_Q3_revised.docm) → powershell.exe -WindowStyle Hidden -EncodedCommand …” Approved work: “Task Scheduler → powershell.exe -File QuarterClose-Export.ps1”.</div><div class="q "><small>Evidence that proves nothing</small>“A passed prompt shows that someone tapped Approve. Intruders get prompts approved too, so this fits both explanations.”</div><div class="q bad"><small>After over-reacting</small>“You had strong evidence that this was approved work and contained anyway. The business paid for an interruption the evidence did not support.”</div>
@@ -381,7 +381,7 @@ td b{color:var(--ink)}
       </div>
     </div>
     <div class="gs-right">
-      <p class="eb">Game 5 of 8 · Dispatcher desk</p>
+      <p class="eb">Game 5 of 22 · Dispatcher desk</p>
       <h2>Cyber Dispatch: First Shift</h2>
       <p class="gs-teaches"><b class="lime">Teaches:</b> Asking the questions that matter, giving the safe next step before harm lands, and handing off only what the evidence confirms.</p>
       <div class="q "><small>A report comes in</small>“Hi! I just got an MFA prompt but I’m not signing in right now. I’m at my desk. Is this legit?” Asking reveals: “The prompt shows a Mail sign-in from Rotterdam. She is in the Lisbon office.”</div><div class="q "><small>The safe step, in time</small>“Turn off Wi-Fi and unplug the network cable now. Leave the laptop switched on.”</div><div class="q bad"><small>A harmful step and its consequence</small>“Reply to the email and ask them to confirm the new details.” → “The sender ‘confirmed’ their own request, and Elena queued the payment.”</div>
@@ -406,7 +406,7 @@ td b{color:var(--ink)}
       </div>
     </div>
     <div class="gs-right">
-      <p class="eb">Game 6 of 8 · SQL investigation</p>
+      <p class="eb">Game 6 of 22 · SQL investigation</p>
       <h2>Query Hunt: Unusual Access</h2>
       <p class="gs-teaches"><b class="lime">Teaches:</b> Filtering, aggregating and joining real log tables, reading the result correctly, and telling a suspicious observation from a confirmed conclusion.</p>
       <div class="q "><small>A query the learner produces</small><code>SELECT account_id, COUNT(*) AS attempts FROM logins WHERE result = 'failure' … GROUP BY account_id ORDER BY attempts DESC</code></div><div class="q bad"><small>When the learner jumps ahead</small>“Repeated failed logins alone do not establish compromise: they show attempts. Which evidence shows what happened after them?”</div><div class="q "><small>The debrief names the limits</small>“The records do not show who was at the keyboard, how the password was obtained, or that data left the device.”</div>
@@ -431,7 +431,7 @@ td b{color:var(--ink)}
       </div>
     </div>
     <div class="gs-right">
-      <p class="eb">Game 7 of 8 · Arcade flight</p>
+      <p class="eb">Game 7 of 22 · Arcade flight</p>
       <h2>Cloud Command: First Orbit</h2>
       <p class="gs-teaches"><b class="lime">Teaches:</b> Finding the real capacity constraint through a dependency, balancing availability against cost, least privilege, and who is responsible for what on IaaS.</p>
       <div class="q "><small>Requirements</small>“Serve at least 99% of checkout requests at the peak.” “Keep 10% headroom above the expected peak on every service in the request path.” “Cost ceiling: 120 credits for the 2-hour surge window.”</div><div class="q bad"><small>After scaling the wrong service</small>Checkout “has enough capacity, but each request calls” the Payments API, “which can serve only” 1,200 rps. More checkout instances “cannot help until” it has capacity.</div><div class="q "><small>Least privilege</small>A backup account holds 7 permissions. “Reading a snapshot requires keys:use on that key. The ticket does not mention it.”</div>
@@ -456,7 +456,7 @@ td b{color:var(--ink)}
       </div>
     </div>
     <div class="gs-right">
-      <p class="eb">Game 8 of 8 · Access graph puzzle</p>
+      <p class="eb">Game 8 of 22 · Access graph puzzle</p>
       <h2>Privilege Path Puzzle: Who Can Read Payroll</h2>
       <p class="gs-teaches"><b class="lime">Teaches:</b> Tracing nested groups and inherited grants to find every route to a file, then making the smallest change that closes it without breaking business access.</p>
       <div class="q "><small>The brief</small>“An engineer opened a payroll file. Nobody remembers giving them access.” Hidden in the graph: “Added during a payroll deadline two years ago so Finance could get in quickly.”</div><div class="q "><small>A check the fix must still pass</small>“svc-backup · Write · Ledger — must be denied”: “A backup job copies data. It never needs to change it.”</div><div class="q bad"><small>After a wrong explanation</small>“Signing in is authentication: it proves who Alex is. What Alex may open is authorization, and that came from a grant.”</div>
@@ -465,6 +465,356 @@ td b{color:var(--ink)}
   </div>
   <div class="foot"><span>Gameplay recorded from the working build · Quotes from the game’s data file</span><span>18</span></div>
 </section>
+<!-- game 9 -->
+<section class="s gs">
+  <div class="gs-grid">
+    <div class="gs-left">
+      <div class="shot gs-video"><button class="play-btn" type="button" data-play="https://remiclassic.github.io/ares-cyber-games/stack.html">▶ Play this game</button><video src="assets/video/secure-stack.mp4" poster="assets/video/secure-stack.jpg" muted loop playsinline preload="metadata"></video></div>
+      <div class="gs-under">
+        <div class="shot gs-debrief"><img src="assets/secure-stack-debrief.jpg" alt=""></div>
+        <div class="gs-facts">
+          <p><b>How it is scored.</b> Points per match with a streak bonus. Stars count mix-ups, not speed: three stars means one mix-up or fewer.</p>
+          <p><b>Proved by tests.</b> “Starts every level solvable: each threat has a matching defence in the pile.” The game drops in a missing defence so no level can get stuck. 10 tests.</p>
+          <p><b>Depth and replay.</b> 5 islands, a tide of new threats from island 2, iced “unidentified” alerts from island 4, and a field guide whose match book fills in as pairs are found.</p>
+        </div>
+      </div>
+    </div>
+    <div class="gs-right">
+      <p class="eb">Game 9 of 22 · Physics sticker pile</p>
+      <h2>Secure Stack: Five Islands</h2>
+      <p class="gs-teaches"><b class="lime">Teaches:</b> Which control actually stops which threat, that one control can cover several threats, and investigating an unknown alert before acting on it.</p>
+      <div class="q "><small>A right match</small>“Report button + Phishing email. Reported fast, the email is pulled from every inbox before more people click.”</div><div class="q "><small>An unidentified alert</small>“Nobody knows what this alert is yet. Secure a threat right next to it to investigate it.”</div><div class="q bad"><small>After a wrong drop</small>“Password manager stops weak password, not phishing email. Phishing email needs Report button or MFA.”</div>
+      <div class="gs-why"><p><b>Why it sticks.</b> The match rule is the lesson: every drop is a claim about which control works, and the crab answers it at once.</p><p><b>Where it fits Ares.</b> All-staff awareness that plays on a phone. A two-minute warm-up before a mission.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>Gameplay recorded from the working build · Quotes from the game’s own data and feedback</span><span>19</span></div>
+</section>
+
+<!-- game 10 -->
+<section class="s gs">
+  <div class="gs-grid">
+    <div class="gs-left">
+      <div class="shot gs-video"><button class="play-btn" type="button" data-play="https://ares-cyber-game-remi.remiclassic.chatgpt.site/">▶ Play this game</button><video src="assets/video/spot-the-phish.mp4" poster="assets/video/spot-the-phish.jpg" muted loop playsinline preload="metadata"></video></div>
+      <div class="gs-under">
+        <div class="shot gs-debrief"><img src="assets/spot-the-phish-debrief.jpg" alt=""></div>
+        <div class="gs-facts">
+          <p><b>How it is scored.</b> Accuracy earns practice stars. Each right call restores a node of the network, ten in all, then four transfer messages test the habit.</p>
+          <p><b>Proved by tests.</b> Built and tested separately, and hosted on its own site; it is the one game here that is not in this repository.</p>
+          <p><b>Depth and replay.</b> 10 messages with a robot coach and hints, drag-to-decide or buttons, and progress saved on the device.</p>
+        </div>
+      </div>
+    </div>
+    <div class="gs-right">
+      <p class="eb">Game 10 of 22 · Inbox with a coach</p>
+      <h2>Spot the Phish: Mission 01</h2>
+      <p class="gs-teaches"><b class="lime">Teaches:</b> Reading a message against what you already know, and choosing between reporting, verifying another way and continuing safely.</p>
+      <div class="q "><small>Your context</small>“Your IT team never asks for your authentication codes. You did not request support.”</div><div class="q "><small>The request</small>“Reply with the six-digit code from your authenticator to prevent account suspension.”</div><div class="q bad"><small>After a wrong call</small>“Your first attempt is recorded. You can try again without losing a life or waiting.”</div>
+      <div class="gs-why"><p><b>Why it sticks.</b> Every message is read against a context line, so the learner judges the request, not the logo.</p><p><b>Where it fits Ares.</b> Fills the same gap as the reserved phish-sprint slot, for every employee.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>Gameplay recorded from the working build · Quotes from the game’s own data and feedback</span><span>20</span></div>
+</section>
+
+<!-- game 11 -->
+<section class="s gs">
+  <div class="gs-grid">
+    <div class="gs-left">
+      <div class="shot gs-video"><button class="play-btn" type="button" data-play="https://remiclassic.github.io/ares-cyber-games/blastradius.html">▶ Play this game</button><video src="assets/video/blast-radius.mp4" poster="assets/video/blast-radius.jpg" muted loop playsinline preload="metadata"></video></div>
+      <div class="gs-under">
+        <div class="shot gs-debrief"><img src="assets/blast-radius-debrief.jpg" alt=""></div>
+        <div class="gs-facts">
+          <p><b>How it is scored.</b> Containment 40, continuity 30 (a clean critical server taken offline counts three times), evidence support 20, triage efficiency 10. A right guess scores 70.</p>
+          <p><b>Proved by tests.</b> “Never settles a case from the sensors alone, but always within the triage budget.” “Keeps blanket strategies well under 60.” 20 tests.</p>
+          <p><b>Depth and replay.</b> 3 cases with two truths each; Retry swaps the truth. What the evidence proves is checked against every possible arrangement of hosts.</p>
+        </div>
+      </div>
+    </div>
+    <div class="gs-right">
+      <p class="eb">Game 11 of 22 · Deduction puzzle</p>
+      <h2>Blast Radius: The Backup Account</h2>
+      <p class="gs-teaches"><b class="lime">Teaches:</b> Scoping a compromise from sensors that only count, spending expensive triage where it settles the most, and saying “unknown” honestly.</p>
+      <div class="q "><small>Why a sensor only counts</small>“Branch clients resolve through this forwarder, so the central DNS log shows only the forwarder’s address.”</div><div class="q "><small>The deduction, in the debrief</small>“Branch DNS forwarder counted 1, and HB-WS-03 already accounts for it.”</div><div class="q bad"><small>After a lucky guess</small>“Contained, but it was a guess. The evidence you gathered left it open; a triage or another sensor would have settled it.”</div>
+      <div class="gs-why"><p><b>Why it sticks.</b> A guess that happens to be right scores less than a deduction, so learners learn to prove before they isolate.</p><p><b>Where it fits Ares.</b> Scoping, the step after SOC Dashboard in the incident response lifecycle.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>Gameplay recorded from the working build · Quotes from the game’s own data and feedback</span><span>21</span></div>
+</section>
+
+<!-- game 12 -->
+<section class="s gs">
+  <div class="gs-grid">
+    <div class="gs-left">
+      <div class="shot gs-video"><button class="play-btn" type="button" data-play="https://remiclassic.github.io/ares-cyber-games/defense.html">▶ Play this game</button><video src="assets/video/defense-in-depth.mp4" poster="assets/video/defense-in-depth.jpg" muted loop playsinline preload="metadata"></video></div>
+      <div class="gs-under">
+        <div class="shot gs-debrief"><img src="assets/defense-in-depth-debrief.jpg" alt=""></div>
+        <div class="gs-facts">
+          <p><b>How it is scored.</b> Outcome 50 (damage, footholds included), depth 25 (stops that survive any one control failing), friction 25 (within what the business accepts).</p>
+          <p><b>Proved by tests.</b> “Detection without response leaves the damage in place.” “Perimeter-only planning collapses when the actors adapt.” 21 tests.</p>
+          <p><b>Depth and replay.</b> 3 waves, 16 ATT&amp;CK techniques, 15 controls. Attackers switch to fallbacks; Retry changes their preferences.</p>
+        </div>
+      </div>
+    </div>
+    <div class="gs-right">
+      <p class="eb">Game 12 of 22 · Defence planning board</p>
+      <h2>Defense in Depth: The Long Week</h2>
+      <p class="gs-teaches"><b class="lime">Teaches:</b> Mapping controls to the attack stages they affect, layering so no single failure lets an attack through, and knowing that detection needs response.</p>
+      <div class="q "><small>A control card</small>Phishing-resistant MFA: “The key checks the site it is talking to, so a relay page gets nothing it can replay.”</div><div class="q "><small>The reasoning check</small>“If Block macros in files from the internet failed, what would stop ‘Invoice lure’?” The game re-runs the attack to answer.</div><div class="q bad"><small>A single point of failure</small>“Stopped at initial access, blocked by No macros. Single point of failure: without No macros it gets through.”</div>
+      <div class="gs-why"><p><b>Why it sticks.</b> The question every defender should ask, “what if this control failed?”, is asked after every wave and answered by the simulation.</p><p><b>Where it fits Ares.</b> Security architecture and ATT&amp;CK-informed defence. Suits managers who approve security budgets.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>Gameplay recorded from the working build · Quotes from the game’s own data and feedback</span><span>22</span></div>
+</section>
+
+<!-- game 13 -->
+<section class="s gs">
+  <div class="gs-grid">
+    <div class="gs-left">
+      <div class="shot gs-video"><button class="play-btn" type="button" data-play="https://remiclassic.github.io/ares-cyber-games/counterplay.html">▶ Play this game</button><video src="assets/video/counterplay.mp4" poster="assets/video/counterplay.jpg" muted loop playsinline preload="metadata"></video></div>
+      <div class="gs-under">
+        <div class="shot gs-debrief"><img src="assets/counterplay-debrief.jpg" alt=""></div>
+        <div class="gs-facts">
+          <p><b>How it is scored.</b> Named it 30, response 40 (graded against the best card still in your toolkit), outcome 30.</p>
+          <p><b>Proved by tests.</b> “Separates naming the technique from choosing the response.” “Keeps naive strategies well below the best play.” 15 tests.</p>
+          <p><b>Depth and replay.</b> 3 incidents, 16 techniques, 22 response cards. The actor switches technique when countered; Retry changes hosts, users and addresses.</p>
+        </div>
+      </div>
+    </div>
+    <div class="gs-right">
+      <p class="eb">Game 13 of 22 · Card duel</p>
+      <h2>Counterplay: Three Incidents</h2>
+      <p class="gs-teaches"><b class="lime">Teaches:</b> Reading raw telemetry, telling a technique from its look-alikes, and choosing the response that removes the attacker’s capability.</p>
+      <div class="q "><small>Telemetry, face down</small><code>idp-signin user=j.alvarez result=success mfa=satisfied by claim in token device=unregistered</code></div><div class="q "><small>The tell, at the reveal</small>“A successful sign-in with MFA ‘satisfied by claim in token’ from an unregistered device: a stolen session.”</div><div class="q bad"><small>A partial fix</small>“Block the sender domain: Stops new messages, but the ones already delivered stay in inboxes and keep getting clicked.”</div>
+      <div class="gs-why"><p><b>Why it sticks.</b> Naming the technique before responding makes learners read the log line, not reach for the scariest-sounding card.</p><p><b>Where it fits Ares.</b> The incident response lifecycle, listed as untapped. A step into SOC tier 1 work.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>Gameplay recorded from the working build · Quotes from the game’s own data and feedback</span><span>23</span></div>
+</section>
+
+<!-- game 14 -->
+<section class="s gs">
+  <div class="gs-grid">
+    <div class="gs-left">
+      <div class="shot gs-video"><button class="play-btn" type="button" data-play="https://remiclassic.github.io/ares-cyber-games/bits.html">▶ Play this game</button><video src="assets/video/bit-by-bit.mp4" poster="assets/video/bit-by-bit.jpg" muted loop playsinline preload="metadata"></video></div>
+      <div class="gs-under">
+        <div class="shot gs-debrief"><img src="assets/bit-by-bit-debrief.jpg" alt=""></div>
+        <div class="gs-facts">
+          <p><b>How it is scored.</b> 10 points per task right first time, 6 on the second check, 3 after that, 0 if the answer is shown. Hints are free.</p>
+          <p><b>Proved by tests.</b> “Sizes subnets to the smallest that fits.” “Explains each kind of wrong answer specifically.” 8 tests.</p>
+          <p><b>Depth and replay.</b> 10 tasks across binary, masks, sizing and finding the network with AND.</p>
+        </div>
+      </div>
+    </div>
+    <div class="gs-right">
+      <p class="eb">Game 14 of 22 · Gear workbench</p>
+      <h2>Bit by Bit: The New Depot</h2>
+      <p class="gs-teaches"><b class="lime">Teaches:</b> Binary octets, masks from prefixes, the smallest subnet that fits, and the network address of a host named in an alert.</p>
+      <div class="q "><small>The task</small>“An alert names 10.20.4.77/26. Build the network address it belongs to.”</div><div class="q "><small>Right answer</small>“77 AND 192 = 64. The network is .64/26; hosts run from .65 to .126.”</div><div class="q bad"><small>Too big a subnet</small>“/25 fits (126 usable) but wastes addresses. A smaller subnet still fits 50: add a network bit.”</div>
+      <div class="gs-why"><p><b>Why it sticks.</b> The answer is built bit by bit on gears, so the maths becomes something you can see and touch.</p><p><b>Where it fits Ares.</b> Networking fundamentals, ahead of Network Defense, Rule Order and Blast Radius.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>Gameplay recorded from the working build · Quotes from the game’s own data and feedback</span><span>24</span></div>
+</section>
+
+<!-- game 15 -->
+<section class="s gs">
+  <div class="gs-grid">
+    <div class="gs-left">
+      <div class="shot gs-video"><button class="play-btn" type="button" data-play="https://remiclassic.github.io/ares-cyber-games/rules.html">▶ Play this game</button><video src="assets/video/rule-order.mp4" poster="assets/video/rule-order.jpg" muted loop playsinline preload="metadata"></video></div>
+      <div class="gs-under">
+        <div class="shot gs-debrief"><img src="assets/rule-order-debrief.jpg" alt=""></div>
+        <div class="gs-facts">
+          <p><b>How it is scored.</b> Correct 70 (packets with the right verdict), tidy 30 (fewest changes, measured as edit distance). Tracing and testing are free.</p>
+          <p><b>Proved by tests.</b> “Does not let the cleanup rule simply be deleted on an allow-by-default firewall.” “Does not solve the legacy rule by reordering alone.” 9 tests.</p>
+          <p><b>Depth and replay.</b> 4 change tickets with test packets. The fewest changes for each ticket (1, 2, 1 and 3) are found by search.</p>
+        </div>
+      </div>
+    </div>
+    <div class="gs-right">
+      <p class="eb">Game 15 of 22 · Rule-ordering puzzle</p>
+      <h2>Rule Order: The FW-CORE Change Window</h2>
+      <p class="gs-teaches"><b class="lime">Teaches:</b> First-match firewall logic, shadowed rules, where the cleanup rule belongs and what the default does, and removing over-broad rules.</p>
+      <div class="q "><small>Tracing a packet</small>“Caught by rule 1 (Staff to servers) → ALLOW”, for a guest laptop that should have been denied.</div><div class="q "><small>The lesson</small>“A broad allow above a narrow deny hides the deny completely: this is called shadowing.”</div><div class="q bad"><small>The tempting delete</small>“A cleanup ‘deny everything’ rule belongs at the very bottom… And on a firewall whose default is allow, deleting it opens everything up.”</div>
+      <div class="gs-why"><p><b>Why it sticks.</b> Tracing a packet makes the firewall’s reading order visible, so “first match wins” is seen, not memorised.</p><p><b>Where it fits Ares.</b> Firewall and ACL rules, listed as untapped; the reserved packet-gate slot.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>Gameplay recorded from the working build · Quotes from the game’s own data and feedback</span><span>25</span></div>
+</section>
+
+<!-- game 16 -->
+<section class="s gs">
+  <div class="gs-grid">
+    <div class="gs-left">
+      <div class="shot gs-video"><button class="play-btn" type="button" data-play="https://remiclassic.github.io/ares-cyber-games/risks.html">▶ Play this game</button><video src="assets/video/spot-the-risks.mp4" poster="assets/video/spot-the-risks.jpg" muted loop playsinline preload="metadata"></video></div>
+      <div class="gs-under">
+        <div class="shot gs-debrief"><img src="assets/spot-the-risks-debrief.jpg" alt=""></div>
+        <div class="gs-facts">
+          <p><b>How it is scored.</b> 4 points for finding each risk, 3 for naming the issue, 3 for the right fix. Each false alarm costs 5.</p>
+          <p><b>Proved by tests.</b> “Charges false alarms, so flagging everything does not win.” “Credits finding a risk even with the wrong reason, but less.” 6 tests.</p>
+          <p><b>Depth and replay.</b> 2 illustrated scenes, 13 risks and 4 decoys, each with an issue, a fix and an explanation.</p>
+        </div>
+      </div>
+    </div>
+    <div class="gs-right">
+      <p class="eb">Game 16 of 22 · Hidden-object scene</p>
+      <h2>Spot the Risks: The Walk-round</h2>
+      <p class="gs-teaches"><b class="lime">Teaches:</b> Physical and social-engineering risks at the office and at home, naming the real issue, choosing the fix over a workaround, and leaving good practice alone.</p>
+      <div class="q "><small>A dropped USB stick</small>“Dropped USB drives with tempting labels are a long-standing attack. Plugging one in, even ‘just to check’, can run code.”</div><div class="q "><small>A decoy</small>“A locked screen is exactly what good looks like. Flagging it costs time and trust.”</div><div class="q bad"><small>A tempting wrong fix</small>“Move the note under the keyboard.” The note reads a VPN password: “Anyone walking the floor, including cleaners and visitors, now has a working password.”</div>
+      <div class="gs-why"><p><b>Why it sticks.</b> The decoys teach what good looks like, so the habit is judgement rather than suspicion of everything.</p><p><b>Where it fits Ares.</b> All-staff awareness and onboarding. Not on the design guide’s list yet.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>Gameplay recorded from the working build · Quotes from the game’s own data and feedback</span><span>26</span></div>
+</section>
+
+<!-- game 17 -->
+<section class="s gs">
+  <div class="gs-grid">
+    <div class="gs-left">
+      <div class="shot gs-video"><button class="play-btn" type="button" data-play="https://remiclassic.github.io/ares-cyber-games/patterns.html">▶ Play this game</button><video src="assets/video/pattern-patrol.mp4" poster="assets/video/pattern-patrol.jpg" muted loop playsinline preload="metadata"></video></div>
+      <div class="gs-under">
+        <div class="shot gs-debrief"><img src="assets/pattern-patrol-debrief.jpg" alt=""></div>
+        <div class="gs-facts">
+          <p><b>How it is scored.</b> 10 points per detection, minus 3 per hint. Showing a reference pattern scores 0 but teaches the trick.</p>
+          <p><b>Proved by tests.</b> “Every reference pattern solves its level.” “The unescaped address falls for the look-alike.” 5 tests.</p>
+          <p><b>Depth and replay.</b> 8 levels, each built around one regex idea and one trap. Lines light up as you type: caught, missed, false alarm.</p>
+        </div>
+      </div>
+    </div>
+    <div class="gs-right">
+      <p class="eb">Game 17 of 22 · Regex workbench · remix of RegExile</p>
+      <h2>Pattern Patrol: Catch the Attack, Not the Noise</h2>
+      <p class="gs-teaches"><b class="lime">Teaches:</b> Writing a detection that catches every attack line and none of its benign look-alikes: escaping, classes, alternation, quantifiers, boundaries.</p>
+      <div class="q "><small>A false alarm, on the line it hits</small><code>Failed password for administrator-training</code>: “Contains ‘admin’ but is a training account.”</div><div class="q "><small>The fix</small><code>Failed password for (root|admin)\b</code>: the word boundary removes the noise.</div><div class="q bad"><small>The lesson on dots</small>“In a regex a dot means ‘any character’. Escape it as \. when you mean a real dot, and use \b so .44 doesn’t also match .440.”</div>
+      <div class="gs-why"><p><b>Why it sticks.</b> Every false alarm shows on the exact line it hits, so precision stops being abstract.</p><p><b>Where it fits Ares.</b> Log analysis and SIEM, listed as untapped. Credited remix of RegExile by the games team.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>Gameplay recorded from the working build · Quotes from the game’s own data and feedback</span><span>27</span></div>
+</section>
+
+<!-- game 18 -->
+<section class="s gs">
+  <div class="gs-grid">
+    <div class="gs-left">
+      <div class="shot gs-video"><button class="play-btn" type="button" data-play="https://remiclassic.github.io/ares-cyber-games/ports.html">▶ Play this game</button><video src="assets/video/port-authority.mp4" poster="assets/video/port-authority.jpg" muted loop playsinline preload="metadata"></video></div>
+      <div class="gs-under">
+        <div class="shot gs-debrief"><img src="assets/port-authority-debrief.jpg" alt=""></div>
+        <div class="gs-facts">
+          <p><b>How it is scored.</b> 1 point for the service, 3 for the policy decision. Knowing every port but allowing everything stays under 60.</p>
+          <p><b>Proved by tests.</b> “Only asks for an upgrade where a secure version exists.” “Covers all three decisions and scores 100 for a perfect run.” 3 tests.</p>
+          <p><b>Depth and replay.</b> 15 ships over three tides, covering Telnet → SSH, FTP → SFTP, HTTP → HTTPS, POP3 → POP3S and LDAP → LDAPS.</p>
+        </div>
+      </div>
+    </div>
+    <div class="gs-right">
+      <p class="eb">Game 18 of 22 · Harbour sorting · remix of Portflow</p>
+      <h2>Port Authority: Every Port Tells You Who Is Knocking</h2>
+      <p class="gs-teaches"><b class="lime">Teaches:</b> Naming the service from its port, then applying a policy: allow it, block it, or upgrade cleartext to its secure version.</p>
+      <div class="q "><small>The harbour rule</small>“Admin access (SSH, RDP) only arrives through the VPN.”</div><div class="q "><small>Same port, right source</small>“RDP is acceptable when it arrives through the VPN to the jump host.”</div><div class="q bad"><small>After allowing Telnet</small>“Policy says upgrade. Telnet sends the admin password in cleartext. Manage the switch over SSH instead.”</div>
+      <div class="gs-why"><p><b>Why it sticks.</b> The same port is right from one place and wrong from another, so learners read the source, not just the number.</p><p><b>Where it fits Ares.</b> Firewall rules and the packet-gate slot. Credited remix of Portflow by the games team.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>Gameplay recorded from the working build · Quotes from the game’s own data and feedback</span><span>28</span></div>
+</section>
+
+<!-- game 19 -->
+<section class="s gs">
+  <div class="gs-grid">
+    <div class="gs-left">
+      <div class="shot gs-video"><button class="play-btn" type="button" data-play="https://remiclassic.github.io/ares-cyber-games/board.html">▶ Play this game</button><video src="assets/video/confidence-board.mp4" poster="assets/video/confidence-board.jpg" muted loop playsinline preload="metadata"></video></div>
+      <div class="gs-under">
+        <div class="shot gs-debrief"><img src="assets/confidence-board-debrief.jpg" alt=""></div>
+        <div class="gs-facts">
+          <p><b>How it is scored.</b> Unsure +½ / 0, Likely +1 / −½, Sure +1½ / −1½, Certain +2 / −6, times the tile’s value.</p>
+          <p><b>Proved by tests.</b> “Makes each confidence level the best bet in its own accuracy band.” 3 tests.</p>
+          <p><b>Depth and replay.</b> 24 questions in 6 categories, each with an explanation, and a calibration chart in the debrief.</p>
+        </div>
+      </div>
+    </div>
+    <div class="gs-right">
+      <p class="eb">Game 19 of 22 · Quiz board · remix of Trivialoot</p>
+      <h2>Confidence Board: Know What You Know</h2>
+      <p class="gs-teaches"><b class="lime">Teaches:</b> Six areas of security knowledge, and calibration: how sure you should be before you act on what you think.</p>
+      <div class="q "><small>The wager</small>“‘Certain’ wins 2× but loses 6×: only worth it if you’d be right 9 times in 10.”</div><div class="q "><small>A question</small>“Which MFA method resists a fake sign-in page that relays your codes?” A FIDO2 security key or passkey.</div><div class="q bad"><small>The debrief</small>“Overconfident at ‘Certain’… Save ‘Certain’ for things you could explain to someone else.”</div>
+      <div class="gs-why"><p><b>Why it sticks.</b> An analyst who says “certain” must be right, and saying “not sure, let me verify” becomes a skill, not a weakness.</p><p><b>Where it fits Ares.</b> A knowledge check across domains. Credited remix of Trivialoot by the games team.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>Gameplay recorded from the working build · Quotes from the game’s own data and feedback</span><span>29</span></div>
+</section>
+
+<!-- game 20 -->
+<section class="s gs">
+  <div class="gs-grid">
+    <div class="gs-left">
+      <div class="shot gs-video"><button class="play-btn" type="button" data-play="https://remiclassic.github.io/ares-cyber-games/chain.html">▶ Play this game</button><video src="assets/video/chain-breaker.mp4" poster="assets/video/chain-breaker.jpg" muted loop playsinline preload="metadata"></video></div>
+      <div class="gs-under">
+        <div class="shot gs-debrief"><img src="assets/chain-breaker-debrief.jpg" alt=""></div>
+        <div class="gs-facts">
+          <p><b>How it is scored.</b> Placement 70 (minus 3 per mistake), then 30 for the earliest break, 15 for a later valid one, 0 for one that breaks nothing.</p>
+          <p><b>Proved by tests.</b> “Each incident has one card per stage and at least one break that does nothing.” “Scores the earliest break best and an irrelevant one at zero.” 3 tests.</p>
+          <p><b>Depth and replay.</b> 3 incidents: an invoice lure, an exposed VPN and a poisoned update.</p>
+        </div>
+      </div>
+    </div>
+    <div class="gs-right">
+      <p class="eb">Game 20 of 22 · Card patience · remix of Cylitaire</p>
+      <h2>Chain Breaker: Rebuild It, Then Break It Early</h2>
+      <p class="gs-teaches"><b class="lime">Teaches:</b> Placing real attack activity on the kill chain, seeing that later links depend on earlier ones, and telling a control that breaks the chain from one that only helps you recover.</p>
+      <div class="q "><small>A misplaced card</small>“Not Delivery: this step happens earlier in the chain.”</div><div class="q "><small>The earliest break</small>“Mail filter quarantines look-alike sender domains: Stops the email arriving at all: the chain breaks at Delivery.”</div><div class="q bad"><small>A break that breaks nothing</small>“Offline, immutable backups: Backups help you recover; they break no step of a data-theft chain.”</div>
+      <div class="gs-why"><p><b>Why it sticks.</b> Every link after the break visibly never happens, which makes “stop it early” concrete.</p><p><b>Where it fits Ares.</b> The kill chain, alongside the hub’s game. Credited remix of Cylitaire: Kill Chain by the games team.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>Gameplay recorded from the working build · Quotes from the game’s own data and feedback</span><span>30</span></div>
+</section>
+
+<!-- game 21 -->
+<section class="s gs">
+  <div class="gs-grid">
+    <div class="gs-left">
+      <div class="shot gs-video"><button class="play-btn" type="button" data-play="https://remiclassic.github.io/ares-cyber-games/orbit.html">▶ Play this game</button><video src="assets/video/tactic-orbit.mp4" poster="assets/video/tactic-orbit.jpg" muted loop playsinline preload="metadata"></video></div>
+      <div class="gs-under">
+        <div class="shot gs-debrief"><img src="assets/tactic-orbit-debrief.jpg" alt=""></div>
+        <div class="gs-facts">
+          <p><b>How it is scored.</b> 100 for a first-try tag, 50 for a second, 0 after that or if the ship gets through.</p>
+          <p><b>Proved by tests.</b> “Uses every tactic and only known techniques.” “Accepts any tactic a multi-tactic technique serves.” 3 tests.</p>
+          <p><b>Depth and replay.</b> 18 techniques over 3 waves in rough intrusion order. Calm mode, on by default, makes it about knowledge, not reflexes.</p>
+        </div>
+      </div>
+    </div>
+    <div class="gs-right">
+      <p class="eb">Game 21 of 22 · Orbital defence · remix of Astro-Defense</p>
+      <h2>Tactic Orbit: Name the Tactic, Raise the Shield</h2>
+      <p class="gs-teaches"><b class="lime">Teaches:</b> Reading an ATT&amp;CK technique and naming the tactic it serves: the attacker’s “why” behind each action.</p>
+      <div class="q "><small>Target intel</small>T1053.005 Scheduled task: “A task is created to run the payload on a schedule.”</div><div class="q "><small>Why several shields work</small>“Scheduled tasks serve several tactics: they run code (Execution), survive reboots (Persistence), and can run as SYSTEM (Privilege Escalation).”</div><div class="q bad"><small>After a wrong shield</small>“Not Exfiltration. The victim opens a file that runs the payload. Think about what this step achieves for the attacker.”</div>
+      <div class="gs-why"><p><b>Why it sticks.</b> Ships arrive roughly in the order of a real intrusion, so the tactics form a story, not a list.</p><p><b>Where it fits Ares.</b> ATT&amp;CK tactics, alongside the hub’s game. Credited remix of Astro-Defense by the games team.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>Gameplay recorded from the working build · Quotes from the game’s own data and feedback</span><span>31</span></div>
+</section>
+
+<!-- game 22 -->
+<section class="s gs">
+  <div class="gs-grid">
+    <div class="gs-left">
+      <div class="shot gs-video"><button class="play-btn" type="button" data-play="https://remiclassic.github.io/ares-cyber-games/blindspots.html">▶ Play this game</button><video src="assets/video/blind-spots.mp4" poster="assets/video/blind-spots.jpg" muted loop playsinline preload="metadata"></video></div>
+      <div class="gs-under">
+        <div class="shot gs-debrief"><img src="assets/blind-spots-debrief.jpg" alt=""></div>
+        <div class="gs-facts">
+          <p><b>How it is scored.</b> Per attack path: up to 70 for how early it was first seen, plus 30 if two or more sensors saw it.</p>
+          <p><b>Proved by tests.</b> “Can’t buy everything, and the best plan is a real trade-off.” “Rewards early detection over late.” 3 tests.</p>
+          <p><b>Depth and replay.</b> 9 sensors, 3 attack paths, and the best plan for the budget found by checking all 512 combinations.</p>
+        </div>
+      </div>
+    </div>
+    <div class="gs-right">
+      <p class="eb">Game 22 of 22 · Sensor planning · remix of Threat Modeler</p>
+      <h2>Blind Spots: You Can’t Stop What You Can’t See</h2>
+      <p class="gs-teaches"><b class="lime">Teaches:</b> Placing detection on attack paths within a budget, and why seeing an attack early and twice beats watching only the exits.</p>
+      <div class="q "><small>A sensor</small>Attachment sandbox, 2 points: “Detonates attachments and flags the ones that misbehave.”</div><div class="q "><small>A path, after the run</small>“First seen at step 1 of 7. Seen more than once.”</div><div class="q bad"><small>After watching only the exits</small>“Watching only the exits catches thieves on the way out, after the damage is done.”</div>
+      <div class="gs-why"><p><b>Why it sticks.</b> The red team replays every path step by step, and the debrief shows the best plan, so learners immediately want another try.</p><p><b>Where it fits Ares.</b> Detection coverage and threat modelling. Credited remix of Threat Modeler by the games team.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>Gameplay recorded from the working build · Quotes from the game’s own data and feedback</span><span>32</span></div>
+</section>
+
 <!-- 8 -->
 <section class="s">
   <p class="eb">Why people remember it</p>
@@ -478,7 +828,7 @@ td b{color:var(--ink)}
     <div class="card"><span class="tag">Short and repeatable</span><h3>Five minutes, different next time</h3><p>Seeds and variants change traffic, attackers, the failing link, or which report is benign, so a replay is practice and not memorisation.</p></div>
   </div>
   <p style="font-size:10.5pt;margin-top:14px">One rule runs through all twenty-two: <b>the game score and the learning evidence are recorded separately.</b> As one debrief puts it, “this record is evidence, not a grade.” That is what makes the result usable for reporting.</p>
-  <div class="foot"><span>Rémi Couture · Games for Project Ares</span><span>19</span></div>
+  <div class="foot"><span>Rémi Couture · Games for Project Ares</span><span>33</span></div>
 </section>
 
 <!-- 9 -->
@@ -506,7 +856,7 @@ td b{color:var(--ink)}
       <div class="card"><h3>A reason to play again</h3><p>Ratings, a clean-run target, and a variant that changes the right answer. Query Hunt’s second dataset makes the highest count the wrong account to follow.</p></div>
     </div>
   </div>
-  <div class="foot"><span>Test names quoted from the project’s test suites · 318 of 318 passing</span><span>20</span></div>
+  <div class="foot"><span>Test names quoted from the project’s test suites · 318 of 318 passing</span><span>34</span></div>
 </section>
 
 <!-- 10 -->
@@ -527,7 +877,7 @@ td b{color:var(--ink)}
     <div class="stat"><b style="font-size:22pt">0 servers</b><span>no backend, no range, no sign-in</span></div>
     <div class="stat"><b style="font-size:22pt">AI-assisted</b><span>I design and direct, and build with AI tooling. That is how one person ships this much.</span></div>
   </div>
-  <div class="foot"><span>Rémi Couture · Games for Project Ares</span><span>21</span></div>
+  <div class="foot"><span>Rémi Couture · Games for Project Ares</span><span>35</span></div>
 </section>
 
 <!-- catalog -->
@@ -542,7 +892,7 @@ td b{color:var(--ink)}
     <p class="cat-label" style="margin-top:10px"><b class="lime">Six remixes.</b> New twists on the six games built by the games team, each credited to its original.</p>
     <div class="cat cat6"><figure class="cat-t"><img src="assets/video/pattern-patrol.jpg" alt=""><figcaption><b>Pattern Patrol</b><span>Remix of RegExile</span></figcaption></figure><figure class="cat-t"><img src="assets/video/port-authority.jpg" alt=""><figcaption><b>Port Authority</b><span>Remix of Portflow</span></figcaption></figure><figure class="cat-t"><img src="assets/video/confidence-board.jpg" alt=""><figcaption><b>Confidence Board</b><span>Remix of Trivialoot</span></figcaption></figure><figure class="cat-t"><img src="assets/video/chain-breaker.jpg" alt=""><figcaption><b>Chain Breaker</b><span>Remix of Cylitaire: Kill Chain</span></figcaption></figure><figure class="cat-t"><img src="assets/video/tactic-orbit.jpg" alt=""><figcaption><b>Tactic Orbit</b><span>Remix of Astro-Defense</span></figcaption></figure><figure class="cat-t"><img src="assets/video/blind-spots.jpg" alt=""><figcaption><b>Blind Spots</b><span>Remix of Threat Modeler</span></figcaption></figure></div>
   </div>
-  <div class="foot"><span>Twenty-two games across twenty-one genres, complementing the six already in the hub</span><span>22</span></div>
+  <div class="foot"><span>Twenty-two games across twenty-one genres, complementing the six already in the hub</span><span>36</span></div>
 </section>
 
 <!-- 11 -->
@@ -569,7 +919,7 @@ td b{color:var(--ink)}
       <div class="card"><h3>Small integration step</h3><p>The hub uses a ready, score-update, complete message flow. My games already post the equivalent events, so each needs a thin adapter, not a rewrite.</p></div>
     </div>
   </div>
-  <div class="foot"><span>Gaps quoted from docs/guides/minigames (README and game design guide)</span><span>23</span></div>
+  <div class="foot"><span>Gaps quoted from docs/guides/minigames (README and game design guide)</span><span>37</span></div>
 </section>
 
 <!-- 12 -->
@@ -601,7 +951,7 @@ td b{color:var(--ink)}
       </table>
     </div>
   </div>
-  <div class="foot"><span>Rémi Couture · Games for Project Ares</span><span>24</span></div>
+  <div class="foot"><span>Rémi Couture · Games for Project Ares</span><span>38</span></div>
 </section>
 
 <!-- 13 -->
@@ -617,7 +967,7 @@ td b{color:var(--ink)}
     <div class="card"><h3>Ready for the Japanese market</h3><p>Text is held as data, so games can be localised the same way as the platform. I have already worked on the Japanese strings across the player app.</p></div>
   </div>
   <p style="font-size:10.5pt;margin-top:14px">I have not measured learner outcomes yet, and I am not claiming numbers. The first thing I would do with the team is put these in front of real learners and measure completion, replays and what they get wrong.</p>
-  <div class="foot"><span>Rémi Couture · Games for Project Ares</span><span>25</span></div>
+  <div class="foot"><span>Rémi Couture · Games for Project Ares</span><span>39</span></div>
 </section>
 
 <!-- 14 -->
@@ -642,7 +992,7 @@ td b{color:var(--ink)}
       <div class="card"><h3>Why I am showing you the gaps</h3><p>Because closing them is the job I am asking to do. None of it is research. It is review, integration and content, and I know exactly what each game needs.</p></div>
     </div>
   </div>
-  <div class="foot"><span>Rémi Couture · Games for Project Ares</span><span>26</span></div>
+  <div class="foot"><span>Rémi Couture · Games for Project Ares</span><span>40</span></div>
 </section>
 
 <!-- 15 -->
@@ -658,7 +1008,7 @@ td b{color:var(--ink)}
       <ul><li>Dispatch and Privilege Path through review and into the hub.</li><li>First new game from the design guide’s Tier 1 list, built with the games team.</li><li>An authoring guide so content developers can add scenarios themselves.</li><li>A short report on what the playtests showed.</li></ul></div>
   </div>
   <p style="font-size:10.5pt;margin-top:14px">These are targets, and they depend on SME and platform time I do not control. I would rather agree the order with you than promise a date I cannot own.</p>
-  <div class="foot"><span>Rémi Couture · Games for Project Ares</span><span>27</span></div>
+  <div class="foot"><span>Rémi Couture · Games for Project Ares</span><span>41</span></div>
 </section>
 
 <!-- recreate -->
@@ -682,7 +1032,7 @@ td b{color:var(--ink)}
       <div class="card"><h3>One owner, low cost</h3><p>This does not need a new team or new infrastructure. It needs the person who built it, some SME hours, and a small integration step.</p></div>
     </div>
   </div>
-  <div class="foot"><span>Counts taken from the games’ data files, test suites and docs</span><span>28</span></div>
+  <div class="foot"><span>Counts taken from the games’ data files, test suites and docs</span><span>42</span></div>
 </section>
 
 <!-- 16 -->
@@ -699,7 +1049,7 @@ td b{color:var(--ink)}
     <div class="card"><h3>What stops without an owner</h3><p>These games are not in the platform repository yet. Without someone to take them through review and integration, they stay prototypes, and the open slots in the hub stay open.</p></div>
   </div>
   <p style="font-size:12pt;margin-top:14px;color:var(--ink)"><b>My ask:</b> thirty minutes to play two of them with you, and a decision on which option fits. The games are ready to demo to a customer now; the only open question is who takes them the rest of the way.</p>
-  <div class="foot"><span>Rémi Couture · rcouture@gmail.com</span><span>29</span></div>
+  <div class="foot"><span>Rémi Couture · rcouture@gmail.com</span><span>43</span></div>
 </section>
 
 <div id="player"><div class="bar"><span id="player-name">Playing</span><button type="button" id="player-close">✕ Close and return to the deck</button></div><iframe title="Game" allow="fullscreen"></iframe></div>
